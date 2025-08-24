@@ -1,0 +1,22 @@
+[
+  { "name": "Bergamot", "family": "Citrus", "personality": "Energetic" },
+  { "name": "Lemon", "family": "Citrus", "personality": "Lively" },
+  { "name": "Orange Blossom", "family": "Floral", "personality": "Cheerful" },
+  { "name": "Jasmine", "family": "Floral", "personality": "Romantic" },
+  { "name": "Rose", "family": "Floral", "personality": "Passionate" },
+  { "name": "Lavender", "family": "Floral", "personality": "Calm" },
+  { "name": "Vanilla", "family": "Gourmand", "personality": "Warm" },
+  { "name": "Cinnamon", "family": "Spicy", "personality": "Bold" },
+  { "name": "Clove", "family": "Spicy", "personality": "Mysterious" },
+  { "name": "Cardamom", "family": "Spicy", "personality": "Adventurous" },
+  { "name": "Musk", "family": "Oriental", "personality": "Seductive" },
+  { "name": "Amber", "family": "Oriental", "personality": "Sophisticated" },
+  { "name": "Patchouli", "family": "Woody", "personality": "Deep" },
+  { "name": "Sandalwood", "family": "Woody", "personality": "Balanced" },
+  { "name": "Vetiver", "family": "Woody", "personality": "Strong" },
+  { "name": "Sea Note", "family": "Fougere", "personality": "Free-spirited" },
+  { "name": "Green Leaf", "family": "Fougere", "personality": "Natural" },
+  { "name": "Honey", "family": "Gourmand", "personality": "Sweet" },
+  { "name": "Coffee", "family": "Gourmand", "personality": "Intense" },
+  { "name": "Tobacco", "family": "Oriental", "personality": "Charismatic" }
+]

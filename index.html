@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfume Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Create Your Perfume</h1>
+  <p>Select your personality traits:</p>
+  <div id="personalities"></div>
+  <button id="create">Generate My Perfume</button>
+  <h2>Result</h2>
+  <div id="result"></div>
+
+  <script>
+    let selectedPersonalities = [];
+    let notesData = [];
+
+    // Load JSON
+    fetch('notes.json')
+      .then(res => res.json())
+      .then(data => {
+        notesData = data;
+
+        // Unique personalities
+        const personalities = [...new Set(data.map(n => n.personality))];
+        const container = document.getElementById('personalities');
+
+        personalities.forEach((p) => {
+          const label = document.createElement('label');
+          label.innerHTML = `<input type="checkbox" value="${p}"> ${p}`;
+          container.appendChild(label);
+          container.appendChild(document.createElement('br'));
+        });
+      });
+
+    document.getElementById('create').addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('#personalities input:checked');
+      if (checkboxes.length === 0) {
+        alert("Please select at least one personality.");
+        return;
+      }
+
+      selectedPersonalities = Array.from(checkboxes).map(cb => cb.value);
+
+      // Filter notes
+      const selectedNotes = notesData.filter(n => selectedPersonalities.includes(n.personality));
+
+      // Similarity calculation (most frequent family)
+      const familyCount = {};
+      selectedNotes.forEach(n => {
+        familyCount[n.family] = (familyCount[n.family] || 0) + 1;
+      });
+      const topFamily = Object.entries(familyCount).sort((a,b)=>b[1]-a[1])[0];
+
+      // Uniqueness simulation
+      const uniqueness = Math.floor(Math.random() * 50) + 50; // 50-100
+
+      // Personalities string
+      const personalitiesStr = selectedPersonalities.join(", ");
+
+      document.getElementById('result').innerHTML = `
+        <p><b>Similarity:</b> Your perfume design is ${60 + Math.floor(Math.random()*30)}% close to ${topFamily[0]} scents.</p>
+        <p><b>Uniqueness:</b> Only ${Math.floor(Math.random()*30)+10}% of users have selected this combination; quite unique.</p>
+        <p><b>Personality profile:</b> The perfume character is ${personalitiesStr.toLowerCase()}.</p>
+        <p><b>Suggested notes:</b> ${selectedNotes.map(n=>n.name).join(", ")}</p>
+      `;
+    });
+  </script>
+</body>
+</html>
