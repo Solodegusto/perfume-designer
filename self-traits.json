@@ -1,0 +1,685 @@
+{
+  "categories": [
+    {
+      "id": "personality",
+      "tr": "Kişilik ve karakter",
+      "en": "Personality & character",
+      "traits": [
+        {
+          "id": "energetic",
+          "tr": "Enerjik",
+          "en": "Energetic",
+          "notes": [
+            "lime",
+            "mandarin",
+            "ginger",
+            "pepper"
+          ]
+        },
+        {
+          "id": "lively",
+          "tr": "Canlı",
+          "en": "Lively",
+          "notes": [
+            "lemon",
+            "grapefruit",
+            "mandarin",
+            "mint"
+          ]
+        },
+        {
+          "id": "cheerful",
+          "tr": "Neşeli",
+          "en": "Cheerful",
+          "notes": [
+            "orange blossom",
+            "mandarin",
+            "pear",
+            "neroli"
+          ]
+        },
+        {
+          "id": "romantic",
+          "tr": "Romantik",
+          "en": "Romantic",
+          "notes": [
+            "rose",
+            "jasmine",
+            "peony",
+            "vanilla"
+          ]
+        },
+        {
+          "id": "passionate",
+          "tr": "Tutkulu",
+          "en": "Passionate",
+          "notes": [
+            "rose",
+            "saffron",
+            "cinnamon",
+            "amber"
+          ]
+        },
+        {
+          "id": "serene",
+          "tr": "Huzurlu",
+          "en": "Serene",
+          "notes": [
+            "lavender",
+            "tea",
+            "iris",
+            "musk"
+          ]
+        },
+        {
+          "id": "warm",
+          "tr": "Sıcak",
+          "en": "Warm",
+          "notes": [
+            "vanilla",
+            "amber",
+            "benzoin",
+            "cinnamon"
+          ]
+        },
+        {
+          "id": "bold",
+          "tr": "Cesur",
+          "en": "Bold",
+          "notes": [
+            "black pepper",
+            "leather",
+            "saffron",
+            "tobacco"
+          ]
+        },
+        {
+          "id": "mysterious",
+          "tr": "Gizemli",
+          "en": "Mysterious",
+          "notes": [
+            "incense",
+            "patchouli",
+            "dark woods",
+            "labdanum"
+          ]
+        },
+        {
+          "id": "adventurous",
+          "tr": "Macera dolu",
+          "en": "Adventurous",
+          "notes": [
+            "cardamom",
+            "juniper",
+            "ginger",
+            "vetiver"
+          ]
+        },
+        {
+          "id": "alluring",
+          "tr": "Çekici",
+          "en": "Alluring",
+          "notes": [
+            "musk",
+            "jasmine",
+            "amber",
+            "vanilla"
+          ]
+        },
+        {
+          "id": "sophisticated",
+          "tr": "Sofistike",
+          "en": "Sophisticated",
+          "notes": [
+            "iris",
+            "sandalwood",
+            "bergamot",
+            "vetiver"
+          ]
+        },
+        {
+          "id": "deep",
+          "tr": "Derin",
+          "en": "Deep",
+          "notes": [
+            "patchouli",
+            "oud",
+            "incense",
+            "vetiver"
+          ]
+        },
+        {
+          "id": "balanced",
+          "tr": "Dengeli",
+          "en": "Balanced",
+          "notes": [
+            "sandalwood",
+            "musk",
+            "bergamot",
+            "cedar"
+          ]
+        },
+        {
+          "id": "strong",
+          "tr": "Güçlü",
+          "en": "Strong",
+          "notes": [
+            "oud",
+            "leather",
+            "tobacco",
+            "cedar"
+          ]
+        },
+        {
+          "id": "free-spirited",
+          "tr": "Özgür ruhlu",
+          "en": "Free-spirited",
+          "notes": [
+            "marine",
+            "watery",
+            "sea salt",
+            "lime"
+          ]
+        },
+        {
+          "id": "natural",
+          "tr": "Doğal",
+          "en": "Natural",
+          "notes": [
+            "green tea",
+            "vetiver",
+            "fig leaf",
+            "cedar"
+          ]
+        },
+        {
+          "id": "sweet",
+          "tr": "Tatlı",
+          "en": "Sweet",
+          "notes": [
+            "vanilla",
+            "honey",
+            "tonka bean",
+            "pear"
+          ]
+        },
+        {
+          "id": "intense",
+          "tr": "Yoğun",
+          "en": "Intense",
+          "notes": [
+            "coffee",
+            "tobacco",
+            "amber",
+            "patchouli"
+          ]
+        },
+        {
+          "id": "charismatic",
+          "tr": "Karizmatik",
+          "en": "Charismatic",
+          "notes": [
+            "tobacco",
+            "leather",
+            "cedar",
+            "amber"
+          ]
+        },
+        {
+          "id": "elegant",
+          "tr": "Zarif",
+          "en": "Elegant",
+          "notes": [
+            "iris",
+            "rose",
+            "white musk",
+            "neroli"
+          ]
+        },
+        {
+          "id": "gentle",
+          "tr": "Naif",
+          "en": "Gentle",
+          "notes": [
+            "peony",
+            "white musk",
+            "cotton flower",
+            "chamomile"
+          ]
+        },
+        {
+          "id": "rebellious",
+          "tr": "Asi",
+          "en": "Rebellious",
+          "notes": [
+            "leather",
+            "black pepper",
+            "smoke",
+            "patchouli"
+          ]
+        },
+        {
+          "id": "assertive",
+          "tr": "İddialı",
+          "en": "Assertive",
+          "notes": [
+            "saffron",
+            "oud",
+            "tuberose",
+            "amber"
+          ]
+        },
+        {
+          "id": "confident",
+          "tr": "Kendinden emin",
+          "en": "Confident",
+          "notes": [
+            "vetiver",
+            "cedar",
+            "bergamot",
+            "musk"
+          ]
+        },
+        {
+          "id": "original",
+          "tr": "Özgün",
+          "en": "Original",
+          "notes": [
+            "fig",
+            "incense",
+            "pink pepper",
+            "iris"
+          ]
+        },
+        {
+          "id": "intellectual",
+          "tr": "Entelektüel",
+          "en": "Intellectual",
+          "notes": [
+            "black tea",
+            "iris",
+            "vetiver",
+            "cedar"
+          ]
+        },
+        {
+          "id": "minimalist",
+          "tr": "Minimalist",
+          "en": "Minimalist",
+          "notes": [
+            "white musk",
+            "neroli",
+            "linen",
+            "bergamot"
+          ]
+        },
+        {
+          "id": "playful",
+          "tr": "Oyunbaz",
+          "en": "Playful",
+          "notes": [
+            "pear",
+            "raspberry",
+            "pink pepper",
+            "orange blossom"
+          ]
+        },
+        {
+          "id": "emotional",
+          "tr": "Duygusal",
+          "en": "Emotional",
+          "notes": [
+            "rose",
+            "violet",
+            "iris",
+            "vanilla"
+          ]
+        },
+        {
+          "id": "dreamy",
+          "tr": "Hayalperest",
+          "en": "Dreamy",
+          "notes": [
+            "violet",
+            "heliotrope",
+            "vanilla",
+            "white musk"
+          ]
+        },
+        {
+          "id": "independent",
+          "tr": "Bağımsız",
+          "en": "Independent",
+          "notes": [
+            "juniper",
+            "vetiver",
+            "leather",
+            "fig"
+          ]
+        },
+        {
+          "id": "disciplined",
+          "tr": "Disiplinli",
+          "en": "Disciplined",
+          "notes": [
+            "cedar",
+            "vetiver",
+            "lavender",
+            "cypress"
+          ]
+        },
+        {
+          "id": "impressive",
+          "tr": "Etkileyici",
+          "en": "Impressive",
+          "notes": [
+            "tuberose",
+            "amber",
+            "saffron",
+            "jasmine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mood",
+      "tr": "Enerji ve ruh hâli",
+      "en": "Energy & mood",
+      "traits": [
+        {
+          "id": "calm",
+          "tr": "Sakin",
+          "en": "Calm",
+          "notes": [
+            "lavender",
+            "chamomile",
+            "white musk",
+            "tea"
+          ]
+        },
+        {
+          "id": "cool",
+          "tr": "Serin",
+          "en": "Cool",
+          "notes": [
+            "marine",
+            "watery",
+            "sea salt",
+            "juniper"
+          ]
+        },
+        {
+          "id": "fresh",
+          "tr": "Ferah",
+          "en": "Fresh",
+          "notes": [
+            "lime",
+            "mandarin",
+            "orange",
+            "lemon"
+          ]
+        },
+        {
+          "id": "dynamic",
+          "tr": "Dinamik",
+          "en": "Dynamic",
+          "notes": [
+            "grapefruit",
+            "ginger",
+            "black pepper",
+            "mint"
+          ]
+        },
+        {
+          "id": "radiant",
+          "tr": "Işıltılı",
+          "en": "Radiant",
+          "notes": [
+            "orange blossom",
+            "neroli",
+            "mandarin",
+            "pear"
+          ]
+        },
+        {
+          "id": "positive",
+          "tr": "Pozitif",
+          "en": "Positive",
+          "notes": [
+            "lemon",
+            "mandarin",
+            "orange blossom",
+            "ginger"
+          ]
+        },
+        {
+          "id": "melancholic",
+          "tr": "Melankolik",
+          "en": "Melancholic",
+          "notes": [
+            "violet",
+            "iris",
+            "incense",
+            "black tea"
+          ]
+        },
+        {
+          "id": "seductive",
+          "tr": "Baştan çıkarıcı",
+          "en": "Seductive",
+          "notes": [
+            "jasmine",
+            "tuberose",
+            "vanilla",
+            "musk"
+          ]
+        },
+        {
+          "id": "meditative",
+          "tr": "Meditatif",
+          "en": "Meditative",
+          "notes": [
+            "incense",
+            "sandalwood",
+            "cedar",
+            "tea"
+          ]
+        },
+        {
+          "id": "relaxed",
+          "tr": "Rahat",
+          "en": "Relaxed",
+          "notes": [
+            "coconut",
+            "fig",
+            "white musk",
+            "lavender"
+          ]
+        },
+        {
+          "id": "invigorating",
+          "tr": "Canlandırıcı",
+          "en": "Invigorating",
+          "notes": [
+            "mint",
+            "lemon",
+            "eucalyptus",
+            "ginger"
+          ]
+        },
+        {
+          "id": "childlike",
+          "tr": "Çocuksu",
+          "en": "Childlike",
+          "notes": [
+            "pear",
+            "cotton flower",
+            "orange blossom",
+            "vanilla"
+          ]
+        },
+        {
+          "id": "free",
+          "tr": "Özgür",
+          "en": "Free",
+          "notes": [
+            "sea salt",
+            "juniper",
+            "fig leaf",
+            "cypress"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "tr": "Stil ve duruş",
+      "en": "Style & attitude",
+      "traits": [
+        {
+          "id": "classic",
+          "tr": "Klasik",
+          "en": "Classic",
+          "notes": [
+            "rose",
+            "iris",
+            "sandalwood",
+            "bergamot"
+          ]
+        },
+        {
+          "id": "modern",
+          "tr": "Modern",
+          "en": "Modern",
+          "notes": [
+            "ambroxan",
+            "pink pepper",
+            "white musk",
+            "bergamot"
+          ]
+        },
+        {
+          "id": "timeless",
+          "tr": "Zamansız",
+          "en": "Timeless",
+          "notes": [
+            "jasmine",
+            "sandalwood",
+            "musk",
+            "vetiver"
+          ]
+        },
+        {
+          "id": "luxurious",
+          "tr": "Lüks",
+          "en": "Luxurious",
+          "notes": [
+            "saffron",
+            "oud",
+            "amber",
+            "rose"
+          ]
+        },
+        {
+          "id": "dramatic",
+          "tr": "Gösterişli",
+          "en": "Dramatic",
+          "notes": [
+            "tuberose",
+            "oud",
+            "amber",
+            "patchouli"
+          ]
+        },
+        {
+          "id": "minimal",
+          "tr": "Minimal",
+          "en": "Minimal",
+          "notes": [
+            "white musk",
+            "linen",
+            "neroli",
+            "cedar"
+          ]
+        },
+        {
+          "id": "masculine",
+          "tr": "Maskülen",
+          "en": "Masculine",
+          "notes": [
+            "vetiver",
+            "leather",
+            "cedar",
+            "black pepper"
+          ]
+        },
+        {
+          "id": "feminine",
+          "tr": "Feminen",
+          "en": "Feminine",
+          "notes": [
+            "rose",
+            "jasmine",
+            "peony",
+            "vanilla"
+          ]
+        },
+        {
+          "id": "androgynous",
+          "tr": "Androjen",
+          "en": "Androgynous",
+          "notes": [
+            "vetiver",
+            "musk",
+            "black tea",
+            "cedar"
+          ]
+        },
+        {
+          "id": "sporty",
+          "tr": "Sportif",
+          "en": "Sporty",
+          "notes": [
+            "sea salt",
+            "lime",
+            "pepper",
+            "mint"
+          ]
+        },
+        {
+          "id": "bohemian",
+          "tr": "Bohem",
+          "en": "Bohemian",
+          "notes": [
+            "fig",
+            "patchouli",
+            "incense",
+            "coconut"
+          ]
+        },
+        {
+          "id": "avant-garde",
+          "tr": "Avangart",
+          "en": "Avant-garde",
+          "notes": [
+            "incense",
+            "metallic accord",
+            "saffron",
+            "leather"
+          ]
+        },
+        {
+          "id": "striking",
+          "tr": "Çarpıcı",
+          "en": "Striking",
+          "notes": [
+            "tuberose",
+            "saffron",
+            "black pepper",
+            "amber"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2535 @@
+{
+  "version": "2.0",
+  "language": [
+    "tr",
+    "en"
+  ],
+  "count": 105,
+  "materials": [
+    {
+      "id": "aldehydes",
+      "name": {
+        "tr": "Aldehitler",
+        "en": "aldehydes"
+      },
+      "family": {
+        "tr": "Temiz / Pudramsı",
+        "en": "Temiz / Pudramsı"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "sparkling",
+        "clean",
+        "airy",
+        "elegant"
+      ],
+      "description": {
+        "tr": "Sabunsu, ışıltılı ve temiz.",
+        "en": "Soapy, sparkling and clean."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "almond",
+      "name": {
+        "tr": "Badem",
+        "en": "almond"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "both",
+      "facets": [
+        "nutty",
+        "sweet",
+        "powdery",
+        "creamy"
+      ],
+      "description": {
+        "tr": "Bademimsi, tatlı ve pudramsı.",
+        "en": "Nutty, sweet and powdery."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "amber",
+      "name": {
+        "tr": "Amber",
+        "en": "amber"
+      },
+      "family": {
+        "tr": "Reçinemsi",
+        "en": "Reçinemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "warm",
+        "sweet",
+        "deep",
+        "resinous"
+      ],
+      "description": {
+        "tr": "Sıcak, tatlı ve reçinemsi.",
+        "en": "Warm, sweet and resinous."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "ambrette",
+      "name": {
+        "tr": "Ambrette",
+        "en": "ambrette"
+      },
+      "family": {
+        "tr": "Misk",
+        "en": "Misk"
+      },
+      "origin": "natural",
+      "facets": [
+        "musky",
+        "soft",
+        "skin-like",
+        "warm"
+      ],
+      "description": {
+        "tr": "Yumuşak, ten benzeri ve hafif tohumumsu.",
+        "en": "Soft, skin-like and lightly seed-like."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "ambroxan",
+      "name": {
+        "tr": "Ambroxan",
+        "en": "ambroxan"
+      },
+      "family": {
+        "tr": "Amberimsi",
+        "en": "Amberimsi"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "woody",
+        "mineral",
+        "clean",
+        "warm"
+      ],
+      "description": {
+        "tr": "Temiz, kuru ve amberimsi.",
+        "en": "Clean, dry and ambery."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "anise",
+      "name": {
+        "tr": "Anise",
+        "en": "anise"
+      },
+      "family": {
+        "tr": "Baharat / Aromatik",
+        "en": "Baharat / Aromatik"
+      },
+      "origin": "natural",
+      "facets": [
+        "aromatic",
+        "sweet",
+        "cool",
+        "spicy"
+      ],
+      "description": {
+        "tr": "Tatlı, serin ve meyan kökümsü.",
+        "en": "Sweet, cool and licorice-like."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "apple",
+      "name": {
+        "tr": "Elma",
+        "en": "apple"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "fresh",
+        "crisp",
+        "bright"
+      ],
+      "description": {
+        "tr": "Çıtır, sulu ve ferah meyve.",
+        "en": "Crisp, juicy and fresh fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "apricot",
+      "name": {
+        "tr": "Kayısı",
+        "en": "apricot"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "soft",
+        "sweet",
+        "warm"
+      ],
+      "description": {
+        "tr": "Yumuşak ve balımsı meyve.",
+        "en": "Soft, honeyed fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "basil",
+      "name": {
+        "tr": "Fesleğen",
+        "en": "basil"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "green",
+        "herbal",
+        "fresh",
+        "aromatic"
+      ],
+      "description": {
+        "tr": "Yeşil, biberimsi ve otsu.",
+        "en": "Green, peppery and herbal."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "benzoin",
+      "name": {
+        "tr": "Benzoin",
+        "en": "benzoin"
+      },
+      "family": {
+        "tr": "Reçinemsi",
+        "en": "Reçinemsi"
+      },
+      "origin": "natural",
+      "facets": [
+        "warm",
+        "sweet",
+        "balsamic",
+        "soft"
+      ],
+      "description": {
+        "tr": "Vanilyamsı, yumuşak reçine.",
+        "en": "Soft, vanilla-like resin."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "bergamot",
+      "name": {
+        "tr": "Bergamot",
+        "en": "bergamot"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "fresh",
+        "bright",
+        "citrus",
+        "green"
+      ],
+      "description": {
+        "tr": "Canlı, hafif acımsı narenciye.",
+        "en": "Bright citrus with a subtle bitter edge."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "black-pepper",
+      "name": {
+        "tr": "Karabiber",
+        "en": "black pepper"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "dry",
+        "bright",
+        "energetic"
+      ],
+      "description": {
+        "tr": "Kuru ve keskin baharat.",
+        "en": "Dry, sharp spice."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "black-tea",
+      "name": {
+        "tr": "Siyah Çay",
+        "en": "black tea"
+      },
+      "family": {
+        "tr": "Aromatik",
+        "en": "Aromatik"
+      },
+      "origin": "accord",
+      "facets": [
+        "dry",
+        "smoky",
+        "deep",
+        "calm"
+      ],
+      "description": {
+        "tr": "Kuru, hafif buruk ve dumansı.",
+        "en": "Dry, slightly tannic and smoky."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "blackcurrant",
+      "name": {
+        "tr": "Blackcurrant",
+        "en": "blackcurrant"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "tart",
+        "green",
+        "bold"
+      ],
+      "description": {
+        "tr": "Koyu, ekşimsi ve yeşil meyve.",
+        "en": "Dark, tart and green fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cacao",
+      "name": {
+        "tr": "Cacao",
+        "en": "cacao"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "dark",
+        "bitter",
+        "sweet",
+        "rich"
+      ],
+      "description": {
+        "tr": "Koyu, kakao benzeri ve zengin.",
+        "en": "Dark, cocoa-like and rich."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "calone",
+      "name": {
+        "tr": "Calone",
+        "en": "calone"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "aquatic",
+        "cool",
+        "fresh",
+        "airy"
+      ],
+      "description": {
+        "tr": "Deniz havası ve sulu kavun çağrışımı.",
+        "en": "Sea-air and watery melon impression."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "caramel",
+      "name": {
+        "tr": "Caramel",
+        "en": "caramel"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "sweet",
+        "warm",
+        "creamy",
+        "rich"
+      ],
+      "description": {
+        "tr": "Yoğun, sıcak ve şekerli.",
+        "en": "Rich, warm and sugary."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cardamom",
+      "name": {
+        "tr": "Cardamom",
+        "en": "cardamom"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "fresh",
+        "aromatic",
+        "cool"
+      ],
+      "description": {
+        "tr": "Serin, aromatik baharat.",
+        "en": "Cool, aromatic spice."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cashmeran",
+      "name": {
+        "tr": "Cashmeran",
+        "en": "cashmeran"
+      },
+      "family": {
+        "tr": "Odunsu / Misk",
+        "en": "Odunsu / Misk"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "woody",
+        "musky",
+        "warm",
+        "soft"
+      ],
+      "description": {
+        "tr": "Sıcak, yumuşak ve odunsu-miskli.",
+        "en": "Warm, soft woody-musk effect."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cedar",
+      "name": {
+        "tr": "Sedir Ağacı",
+        "en": "cedar"
+      },
+      "family": {
+        "tr": "Odunsu",
+        "en": "Odunsu"
+      },
+      "origin": "natural",
+      "facets": [
+        "woody",
+        "dry",
+        "clean",
+        "grounded"
+      ],
+      "description": {
+        "tr": "Kuru, temiz ve kalem talaşını andıran odun.",
+        "en": "Dry, clean pencil-shaving wood."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "chamomile",
+      "name": {
+        "tr": "Chamomile",
+        "en": "chamomile"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "herbal",
+        "soft",
+        "calm",
+        "fresh"
+      ],
+      "description": {
+        "tr": "Yumuşak, otsu ve rahatlatıcı çağrışımlı.",
+        "en": "Soft, herbal and gently soothing."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cherry",
+      "name": {
+        "tr": "Kiraz",
+        "en": "cherry"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "sweet",
+        "dark",
+        "playful"
+      ],
+      "description": {
+        "tr": "Tatlı-ekşi, koyu meyve.",
+        "en": "Sweet-tart dark fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cinnamon",
+      "name": {
+        "tr": "Tarçın",
+        "en": "cinnamon"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "warm",
+        "sweet",
+        "intense"
+      ],
+      "description": {
+        "tr": "Sıcak ve tatlı baharat.",
+        "en": "Warm, sweet spice."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "civet",
+      "name": {
+        "tr": "Civet",
+        "en": "civet"
+      },
+      "family": {
+        "tr": "Misk / Animalik",
+        "en": "Misk / Animalik"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "animalic",
+        "warm",
+        "sensual",
+        "deep"
+      ],
+      "description": {
+        "tr": "Sıcak, hayvansı ve ten benzeri.",
+        "en": "Warm, animalic and skin-like."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "coconut",
+      "name": {
+        "tr": "Coconut",
+        "en": "coconut"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "creamy",
+        "sweet",
+        "soft",
+        "sunny"
+      ],
+      "description": {
+        "tr": "Kremsi, tatlı ve tropik.",
+        "en": "Creamy, sweet and tropical."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "coffee",
+      "name": {
+        "tr": "Kahve",
+        "en": "coffee"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "roasted",
+        "bitter",
+        "dark",
+        "deep"
+      ],
+      "description": {
+        "tr": "Kavrulmuş, koyu ve hafif acı.",
+        "en": "Roasted, dark and slightly bitter."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cognac",
+      "name": {
+        "tr": "Cognac",
+        "en": "cognac"
+      },
+      "family": {
+        "tr": "Alkollü / Gurme",
+        "en": "Alkollü / Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "boozy",
+        "warm",
+        "fruity",
+        "rich"
+      ],
+      "description": {
+        "tr": "Meyvemsi ve sıcak alkollü nüans.",
+        "en": "Fruity and warm boozy nuance."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "coriander",
+      "name": {
+        "tr": "Coriander",
+        "en": "coriander"
+      },
+      "family": {
+        "tr": "Baharat / Aromatik",
+        "en": "Baharat / Aromatik"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "fresh",
+        "green",
+        "aromatic"
+      ],
+      "description": {
+        "tr": "Yeşil, narenciyeli ve aromatik baharat.",
+        "en": "Green, citrusy and aromatic spice."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cotton-flower",
+      "name": {
+        "tr": "Cotton Flower",
+        "en": "cotton flower"
+      },
+      "family": {
+        "tr": "Temiz / Pudramsı",
+        "en": "Temiz / Pudramsı"
+      },
+      "origin": "accord",
+      "facets": [
+        "clean",
+        "soft",
+        "airy",
+        "calm"
+      ],
+      "description": {
+        "tr": "Temiz, hafif ve yumuşak.",
+        "en": "Clean, light and soft."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cucumber",
+      "name": {
+        "tr": "Cucumber",
+        "en": "cucumber"
+      },
+      "family": {
+        "tr": "Yeşil / Sulu",
+        "en": "Yeşil / Sulu"
+      },
+      "origin": "accord",
+      "facets": [
+        "watery",
+        "fresh",
+        "green",
+        "cool"
+      ],
+      "description": {
+        "tr": "Sulu, yeşil ve serin.",
+        "en": "Watery, green and cool."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cumin",
+      "name": {
+        "tr": "Cumin",
+        "en": "cumin"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "warm",
+        "animalic",
+        "intense"
+      ],
+      "description": {
+        "tr": "Sıcak, topraksı ve keskin baharat.",
+        "en": "Warm, earthy and sharp spice."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "cypress",
+      "name": {
+        "tr": "Cypress",
+        "en": "cypress"
+      },
+      "family": {
+        "tr": "Odunsu / Yeşil",
+        "en": "Odunsu / Yeşil"
+      },
+      "origin": "natural",
+      "facets": [
+        "green",
+        "woody",
+        "dry",
+        "fresh"
+      ],
+      "description": {
+        "tr": "Yeşil, kuru ve reçinemsi.",
+        "en": "Green, dry and resinous."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "dark-woods",
+      "name": {
+        "tr": "Dark Woods",
+        "en": "dark woods"
+      },
+      "family": {
+        "tr": "Odunsu",
+        "en": "Odunsu"
+      },
+      "origin": "accord",
+      "facets": [
+        "woody",
+        "dark",
+        "deep",
+        "dry"
+      ],
+      "description": {
+        "tr": "Koyu, kuru ve derin odunsu etki.",
+        "en": "Dark, dry and deep woody effect."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "eucalyptus",
+      "name": {
+        "tr": "Eucalyptus",
+        "en": "eucalyptus"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "fresh",
+        "cool",
+        "green",
+        "aromatic"
+      ],
+      "description": {
+        "tr": "Serin, keskin ve ferah bitkisel nota.",
+        "en": "Cool, sharp and fresh herbal note."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "fig",
+      "name": {
+        "tr": "Fig",
+        "en": "fig"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "creamy",
+        "green",
+        "soft",
+        "sweet"
+      ],
+      "description": {
+        "tr": "Yeşil ve kremsi meyvemsi etki.",
+        "en": "Green, creamy fruity effect."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "fig-leaf",
+      "name": {
+        "tr": "Fig Leaf",
+        "en": "fig leaf"
+      },
+      "family": {
+        "tr": "Yeşil",
+        "en": "Yeşil"
+      },
+      "origin": "accord",
+      "facets": [
+        "green",
+        "fresh",
+        "watery",
+        "soft"
+      ],
+      "description": {
+        "tr": "Yeşil, sütümsü ve hafif sulu.",
+        "en": "Green, milky and lightly watery."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "gardenia",
+      "name": {
+        "tr": "Gardenia",
+        "en": "gardenia"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "creamy",
+        "rich",
+        "sensual"
+      ],
+      "description": {
+        "tr": "Kremsi, yoğun beyaz çiçeksi.",
+        "en": "Creamy, rich white floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "ginger",
+      "name": {
+        "tr": "Ginger",
+        "en": "ginger"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "fresh",
+        "bright",
+        "energetic"
+      ],
+      "description": {
+        "tr": "Canlı, taze ve hafif yakıcı.",
+        "en": "Bright, fresh and gently hot."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "grapefruit",
+      "name": {
+        "tr": "Grapefruit",
+        "en": "grapefruit"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "fresh",
+        "bitter",
+        "bright"
+      ],
+      "description": {
+        "tr": "Acımsı, parlak narenciye.",
+        "en": "Bitter, sparkling citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "green-tea",
+      "name": {
+        "tr": "Green Tea",
+        "en": "green tea"
+      },
+      "family": {
+        "tr": "Aromatik",
+        "en": "Aromatik"
+      },
+      "origin": "accord",
+      "facets": [
+        "fresh",
+        "green",
+        "clean",
+        "calm"
+      ],
+      "description": {
+        "tr": "Yeşil, temiz ve hafif buruk.",
+        "en": "Green, clean and lightly tannic."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "hazelnut",
+      "name": {
+        "tr": "Hazelnut",
+        "en": "hazelnut"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "natural",
+      "facets": [
+        "nutty",
+        "warm",
+        "creamy",
+        "sweet"
+      ],
+      "description": {
+        "tr": "Kavrulmuş, sıcak ve kremamsı.",
+        "en": "Roasted, warm and creamy."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "hedione",
+      "name": {
+        "tr": "Hedione",
+        "en": "hedione"
+      },
+      "family": {
+        "tr": "Çiçeksi / Havadar",
+        "en": "Çiçeksi / Havadar"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "airy",
+        "floral",
+        "fresh",
+        "radiant"
+      ],
+      "description": {
+        "tr": "Havadar, ferah ve yaseminimsi.",
+        "en": "Airy, fresh and jasmine-like."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "heliotrope",
+      "name": {
+        "tr": "Heliotrope",
+        "en": "heliotrope"
+      },
+      "family": {
+        "tr": "Çiçeksi / Pudramsı",
+        "en": "Çiçeksi / Pudramsı"
+      },
+      "origin": "natural",
+      "facets": [
+        "powdery",
+        "soft",
+        "sweet",
+        "creamy"
+      ],
+      "description": {
+        "tr": "Pudramsı, bademimsi ve yumuşak.",
+        "en": "Powdery, almond-like and soft."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "honey",
+      "name": {
+        "tr": "Honey",
+        "en": "honey"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "sweet",
+        "warm",
+        "rich",
+        "soft"
+      ],
+      "description": {
+        "tr": "Yoğun, sıcak ve tatlı.",
+        "en": "Rich, warm and sweet."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "incense",
+      "name": {
+        "tr": "Incense",
+        "en": "incense"
+      },
+      "family": {
+        "tr": "Tütsü / Reçine",
+        "en": "Tütsü / Reçine"
+      },
+      "origin": "accord",
+      "facets": [
+        "smoky",
+        "resinous",
+        "deep",
+        "mysterious"
+      ],
+      "description": {
+        "tr": "Dumansı, reçinemsi ve derin.",
+        "en": "Smoky, resinous and deep."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "iris",
+      "name": {
+        "tr": "Iris",
+        "en": "iris"
+      },
+      "family": {
+        "tr": "Çiçeksi / Pudramsı",
+        "en": "Çiçeksi / Pudramsı"
+      },
+      "origin": "natural",
+      "facets": [
+        "powdery",
+        "elegant",
+        "dry",
+        "soft"
+      ],
+      "description": {
+        "tr": "Pudramsı, kuru ve zarif.",
+        "en": "Powdery, dry and elegant."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "iso-e-super",
+      "name": {
+        "tr": "Iso E Super",
+        "en": "iso e super"
+      },
+      "family": {
+        "tr": "Odunsu",
+        "en": "Odunsu"
+      },
+      "origin": "synthetic",
+      "facets": [
+        "woody",
+        "airy",
+        "clean",
+        "modern"
+      ],
+      "description": {
+        "tr": "Şeffaf, kuru ve modern odunsu etki.",
+        "en": "Transparent, dry and modern woody effect."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "jasmine",
+      "name": {
+        "tr": "Yasemin",
+        "en": "jasmine"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "rich",
+        "sensual",
+        "soft"
+      ],
+      "description": {
+        "tr": "Zengin, beyaz çiçeksi ve duyusal.",
+        "en": "Rich, white-floral and sensual."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "juniper",
+      "name": {
+        "tr": "Juniper",
+        "en": "juniper"
+      },
+      "family": {
+        "tr": "Aromatik",
+        "en": "Aromatik"
+      },
+      "origin": "natural",
+      "facets": [
+        "fresh",
+        "green",
+        "cool",
+        "aromatic"
+      ],
+      "description": {
+        "tr": "Serin, reçinemsi ve aromatik.",
+        "en": "Cool, resinous and aromatic."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "labdanum",
+      "name": {
+        "tr": "Labdanum",
+        "en": "labdanum"
+      },
+      "family": {
+        "tr": "Reçinemsi",
+        "en": "Reçinemsi"
+      },
+      "origin": "natural",
+      "facets": [
+        "ambery",
+        "warm",
+        "leathery",
+        "deep"
+      ],
+      "description": {
+        "tr": "Sıcak, deri nüanslı reçine.",
+        "en": "Warm resin with leathery nuances."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "lavender",
+      "name": {
+        "tr": "Lavanta",
+        "en": "lavender"
+      },
+      "family": {
+        "tr": "Aromatik",
+        "en": "Aromatik"
+      },
+      "origin": "natural",
+      "facets": [
+        "aromatic",
+        "clean",
+        "calm",
+        "fresh"
+      ],
+      "description": {
+        "tr": "Temiz, aromatik ve otsu.",
+        "en": "Clean, aromatic and herbal."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "leather",
+      "name": {
+        "tr": "Deri",
+        "en": "leather"
+      },
+      "family": {
+        "tr": "Deri / Dumansı",
+        "en": "Deri / Dumansı"
+      },
+      "origin": "accord",
+      "facets": [
+        "leathery",
+        "dark",
+        "smoky",
+        "bold"
+      ],
+      "description": {
+        "tr": "Koyu, kuru ve deri benzeri.",
+        "en": "Dark, dry and leather-like."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "lemon",
+      "name": {
+        "tr": "Limon",
+        "en": "lemon"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "fresh",
+        "bright",
+        "clean"
+      ],
+      "description": {
+        "tr": "Keskin, parlak ve ferah narenciye.",
+        "en": "Sharp, bright and fresh citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "lime",
+      "name": {
+        "tr": "Lime",
+        "en": "lime"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "fresh",
+        "green",
+        "energetic"
+      ],
+      "description": {
+        "tr": "Yeşil, canlı ve keskin narenciye.",
+        "en": "Green, lively and sharp citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "linen",
+      "name": {
+        "tr": "Linen",
+        "en": "linen"
+      },
+      "family": {
+        "tr": "Temiz / Pudramsı",
+        "en": "Temiz / Pudramsı"
+      },
+      "origin": "accord",
+      "facets": [
+        "clean",
+        "airy",
+        "soft",
+        "minimal"
+      ],
+      "description": {
+        "tr": "Temiz çamaşır ve hafif kumaş hissi.",
+        "en": "Clean-linen, airy fabric impression."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "magnolia",
+      "name": {
+        "tr": "Magnolia",
+        "en": "magnolia"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "fresh",
+        "airy",
+        "elegant"
+      ],
+      "description": {
+        "tr": "Taze, hafif limonsu çiçeksi.",
+        "en": "Fresh, airy and lightly citrusy floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "mandarin",
+      "name": {
+        "tr": "Mandarin",
+        "en": "mandarin"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "sweet",
+        "bright",
+        "playful"
+      ],
+      "description": {
+        "tr": "Tatlı, yumuşak ve neşeli narenciye.",
+        "en": "Sweet, soft and cheerful citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "marine",
+      "name": {
+        "tr": "Marine Notes",
+        "en": "marine"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "aquatic",
+        "salty",
+        "fresh",
+        "airy"
+      ],
+      "description": {
+        "tr": "Tuzlu, sulu ve deniz esintili.",
+        "en": "Salty, watery and sea-breezy."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "marshmallow",
+      "name": {
+        "tr": "Marshmallow",
+        "en": "marshmallow"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "sweet",
+        "soft",
+        "powdery",
+        "airy"
+      ],
+      "description": {
+        "tr": "Hafif, yumuşak ve şekerli.",
+        "en": "Light, soft and sugary."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "metallic-accord",
+      "name": {
+        "tr": "Metallic Accord",
+        "en": "metallic accord"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "metallic",
+        "cool",
+        "mineral",
+        "modern"
+      ],
+      "description": {
+        "tr": "Serin, metalik ve mineralimsi.",
+        "en": "Cool, metallic and mineral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "milk",
+      "name": {
+        "tr": "Milk",
+        "en": "milk"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "creamy",
+        "soft",
+        "sweet",
+        "comforting"
+      ],
+      "description": {
+        "tr": "Sütümsü, kremsi ve yumuşak.",
+        "en": "Milky, creamy and soft."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "mineral-accord",
+      "name": {
+        "tr": "Mineral Accord",
+        "en": "mineral accord"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "mineral",
+        "dry",
+        "cool",
+        "modern"
+      ],
+      "description": {
+        "tr": "Taş, metal ve kuru mineral hissi.",
+        "en": "Stone, metal and dry mineral impression."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "mint",
+      "name": {
+        "tr": "Nane",
+        "en": "mint"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "cool",
+        "fresh",
+        "green",
+        "energetic"
+      ],
+      "description": {
+        "tr": "Serin, yeşil ve keskin.",
+        "en": "Cool, green and sharp."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "moss",
+      "name": {
+        "tr": "Moss",
+        "en": "moss"
+      },
+      "family": {
+        "tr": "Topraksı / Yeşil",
+        "en": "Topraksı / Yeşil"
+      },
+      "origin": "accord",
+      "facets": [
+        "earthy",
+        "green",
+        "soft",
+        "dark"
+      ],
+      "description": {
+        "tr": "Yeşil, nemli ve topraksı.",
+        "en": "Green, damp and earthy."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "musk",
+      "name": {
+        "tr": "Musk",
+        "en": "musk"
+      },
+      "family": {
+        "tr": "Misk",
+        "en": "Misk"
+      },
+      "origin": "accord",
+      "facets": [
+        "soft",
+        "clean",
+        "skin-like",
+        "warm"
+      ],
+      "description": {
+        "tr": "Yumuşak, ten benzeri ve temiz.",
+        "en": "Soft, clean and skin-like."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "myrrh",
+      "name": {
+        "tr": "Myrrh",
+        "en": "myrrh"
+      },
+      "family": {
+        "tr": "Reçine / Tütsü",
+        "en": "Reçine / Tütsü"
+      },
+      "origin": "natural",
+      "facets": [
+        "resinous",
+        "smoky",
+        "warm",
+        "mysterious"
+      ],
+      "description": {
+        "tr": "Acımsı, dumansı ve reçinemsi.",
+        "en": "Bitter, smoky and resinous."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "neroli",
+      "name": {
+        "tr": "Neroli",
+        "en": "neroli"
+      },
+      "family": {
+        "tr": "Narenciye / Çiçeksi",
+        "en": "Narenciye / Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "floral",
+        "fresh",
+        "elegant"
+      ],
+      "description": {
+        "tr": "Narenciyeli, çiçeksi ve ferah.",
+        "en": "Citrusy, floral and fresh."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "oakmoss",
+      "name": {
+        "tr": "Oakmoss",
+        "en": "oakmoss"
+      },
+      "family": {
+        "tr": "Topraksı / Yeşil",
+        "en": "Topraksı / Yeşil"
+      },
+      "origin": "natural",
+      "facets": [
+        "earthy",
+        "green",
+        "woody",
+        "dry"
+      ],
+      "description": {
+        "tr": "Nemli orman ve yosun hissi.",
+        "en": "Damp forest and moss impression."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "orange",
+      "name": {
+        "tr": "Orange",
+        "en": "orange"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "sweet",
+        "bright",
+        "playful"
+      ],
+      "description": {
+        "tr": "Tatlı ve parlak narenciye.",
+        "en": "Sweet, bright citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "orange-blossom",
+      "name": {
+        "tr": "Orange Blossom",
+        "en": "orange blossom"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "citrus",
+        "clean",
+        "sensual"
+      ],
+      "description": {
+        "tr": "Beyaz çiçeksi, hafif narenciyeli.",
+        "en": "White floral with a citrus lift."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "oud",
+      "name": {
+        "tr": "Oud",
+        "en": "oud"
+      },
+      "family": {
+        "tr": "Odunsu / Reçine",
+        "en": "Odunsu / Reçine"
+      },
+      "origin": "natural",
+      "facets": [
+        "woody",
+        "dark",
+        "smoky",
+        "intense"
+      ],
+      "description": {
+        "tr": "Koyu, reçinemsi ve yoğun odun.",
+        "en": "Dark, resinous and intense wood."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "ozonic-accord",
+      "name": {
+        "tr": "Ozonic Accord",
+        "en": "ozonic accord"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "airy",
+        "fresh",
+        "cool",
+        "modern"
+      ],
+      "description": {
+        "tr": "Havadar, serin ve temiz.",
+        "en": "Airy, cool and clean."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "patchouli",
+      "name": {
+        "tr": "Patchouli",
+        "en": "patchouli"
+      },
+      "family": {
+        "tr": "Odunsu / Topraksı",
+        "en": "Odunsu / Topraksı"
+      },
+      "origin": "natural",
+      "facets": [
+        "earthy",
+        "woody",
+        "dark",
+        "deep"
+      ],
+      "description": {
+        "tr": "Topraksı, koyu ve odunsu.",
+        "en": "Earthy, dark and woody."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "peach",
+      "name": {
+        "tr": "Peach",
+        "en": "peach"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "soft",
+        "juicy",
+        "sweet"
+      ],
+      "description": {
+        "tr": "Yumuşak, sulu ve kadifemsi meyve.",
+        "en": "Soft, juicy and velvety fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "pear",
+      "name": {
+        "tr": "Pear",
+        "en": "pear"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "fresh",
+        "juicy",
+        "soft"
+      ],
+      "description": {
+        "tr": "Sulu, taze ve hafif tatlı.",
+        "en": "Juicy, fresh and lightly sweet."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "peony",
+      "name": {
+        "tr": "Peony",
+        "en": "peony"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "accord",
+      "facets": [
+        "floral",
+        "fresh",
+        "soft",
+        "romantic"
+      ],
+      "description": {
+        "tr": "Hafif, taze ve yumuşak çiçeksi.",
+        "en": "Light, fresh and soft floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "pepper",
+      "name": {
+        "tr": "Pepper",
+        "en": "pepper"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "dry",
+        "bright",
+        "bold"
+      ],
+      "description": {
+        "tr": "Kuru ve canlı baharat.",
+        "en": "Dry and lively spice."
+      },
+      "aliases": [
+        "pepper"
+      ],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "petitgrain",
+      "name": {
+        "tr": "Petitgrain",
+        "en": "petitgrain"
+      },
+      "family": {
+        "tr": "Narenciye / Yeşil",
+        "en": "Narenciye / Yeşil"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "green",
+        "bitter",
+        "fresh"
+      ],
+      "description": {
+        "tr": "Yeşil yaprak ve acımsı narenciye.",
+        "en": "Green leaf and bitter citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "pineapple",
+      "name": {
+        "tr": "Pineapple",
+        "en": "pineapple"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "bright",
+        "juicy",
+        "tropical"
+      ],
+      "description": {
+        "tr": "Canlı, sulu ve tropik meyve.",
+        "en": "Bright, juicy tropical fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "pink-pepper",
+      "name": {
+        "tr": "Pink Pepper",
+        "en": "pink pepper"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "fresh",
+        "bright",
+        "playful"
+      ],
+      "description": {
+        "tr": "Parlak, hafif meyvemsi baharat.",
+        "en": "Bright, lightly fruity spice."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "pistachio",
+      "name": {
+        "tr": "Pistachio",
+        "en": "pistachio"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "nutty",
+        "creamy",
+        "sweet",
+        "soft"
+      ],
+      "description": {
+        "tr": "Kremsi, yeşilimsi ve tatlı.",
+        "en": "Creamy, green-tinged and sweet."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "plum",
+      "name": {
+        "tr": "Plum",
+        "en": "plum"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "sweet",
+        "dark",
+        "soft"
+      ],
+      "description": {
+        "tr": "Koyu, sulu ve tatlı meyve.",
+        "en": "Dark, juicy and sweet fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "praline",
+      "name": {
+        "tr": "Praline",
+        "en": "praline"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "sweet",
+        "nutty",
+        "creamy",
+        "warm"
+      ],
+      "description": {
+        "tr": "Tatlı, fındıksı ve kremsi.",
+        "en": "Sweet, nutty and creamy."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "raspberry",
+      "name": {
+        "tr": "Raspberry",
+        "en": "raspberry"
+      },
+      "family": {
+        "tr": "Meyvemsi",
+        "en": "Meyvemsi"
+      },
+      "origin": "accord",
+      "facets": [
+        "fruity",
+        "sweet",
+        "bright",
+        "playful"
+      ],
+      "description": {
+        "tr": "Tatlı, ekşimsi ve canlı meyve.",
+        "en": "Sweet-tart and lively fruit."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "rose",
+      "name": {
+        "tr": "Gül",
+        "en": "rose"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "romantic",
+        "rich",
+        "elegant"
+      ],
+      "description": {
+        "tr": "Zengin, klasik ve çok yönlü çiçeksi.",
+        "en": "Rich, classic and versatile floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "rosemary",
+      "name": {
+        "tr": "Rosemary",
+        "en": "rosemary"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "herbal",
+        "fresh",
+        "green",
+        "aromatic"
+      ],
+      "description": {
+        "tr": "Taze, reçinemsi ve otsu.",
+        "en": "Fresh, resinous and herbal."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "rum",
+      "name": {
+        "tr": "Rum",
+        "en": "rum"
+      },
+      "family": {
+        "tr": "Alkollü / Gurme",
+        "en": "Alkollü / Gurme"
+      },
+      "origin": "accord",
+      "facets": [
+        "boozy",
+        "warm",
+        "sweet",
+        "deep"
+      ],
+      "description": {
+        "tr": "Sıcak, tatlı ve koyu alkollü nüans.",
+        "en": "Warm, sweet and dark boozy nuance."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "saffron",
+      "name": {
+        "tr": "Saffron",
+        "en": "saffron"
+      },
+      "family": {
+        "tr": "Baharat",
+        "en": "Baharat"
+      },
+      "origin": "natural",
+      "facets": [
+        "spicy",
+        "warm",
+        "leathery",
+        "luxurious"
+      ],
+      "description": {
+        "tr": "Sıcak, kuru ve hafif deri nüanslı.",
+        "en": "Warm, dry and lightly leathery."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "sage",
+      "name": {
+        "tr": "Sage",
+        "en": "sage"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "herbal",
+        "dry",
+        "aromatic",
+        "calm"
+      ],
+      "description": {
+        "tr": "Kuru, otsu ve aromatik.",
+        "en": "Dry, herbal and aromatic."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "sandalwood",
+      "name": {
+        "tr": "Sandalwood",
+        "en": "sandalwood"
+      },
+      "family": {
+        "tr": "Odunsu",
+        "en": "Odunsu"
+      },
+      "origin": "natural",
+      "facets": [
+        "woody",
+        "creamy",
+        "soft",
+        "warm"
+      ],
+      "description": {
+        "tr": "Kremsi, yumuşak ve sıcak odun.",
+        "en": "Creamy, soft and warm wood."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "sea-salt",
+      "name": {
+        "tr": "Sea Salt",
+        "en": "sea salt"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "salty",
+        "aquatic",
+        "fresh",
+        "mineral"
+      ],
+      "description": {
+        "tr": "Tuzlu, mineral ve ferah.",
+        "en": "Salty, mineral and fresh."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "seaweed",
+      "name": {
+        "tr": "Seaweed",
+        "en": "seaweed"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "aquatic",
+        "salty",
+        "green",
+        "mineral"
+      ],
+      "description": {
+        "tr": "Deniz yosunu, tuz ve ıslak taş çağrışımı.",
+        "en": "Seaweed, salt and wet-stone impression."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "smoke",
+      "name": {
+        "tr": "Smoke",
+        "en": "smoke"
+      },
+      "family": {
+        "tr": "Dumansı",
+        "en": "Dumansı"
+      },
+      "origin": "accord",
+      "facets": [
+        "smoky",
+        "dark",
+        "dry",
+        "mysterious"
+      ],
+      "description": {
+        "tr": "Kuru, dumansı ve koyu.",
+        "en": "Dry, smoky and dark."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "tea",
+      "name": {
+        "tr": "Tea",
+        "en": "tea"
+      },
+      "family": {
+        "tr": "Aromatik",
+        "en": "Aromatik"
+      },
+      "origin": "accord",
+      "facets": [
+        "calm",
+        "dry",
+        "fresh",
+        "soft"
+      ],
+      "description": {
+        "tr": "Kuru, sakin ve hafif aromatik.",
+        "en": "Dry, calm and lightly aromatic."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "thyme",
+      "name": {
+        "tr": "Thyme",
+        "en": "thyme"
+      },
+      "family": {
+        "tr": "Bitkisel",
+        "en": "Bitkisel"
+      },
+      "origin": "natural",
+      "facets": [
+        "herbal",
+        "spicy",
+        "dry",
+        "green"
+      ],
+      "description": {
+        "tr": "Kuru, yeşil ve baharatlı otsu.",
+        "en": "Dry, green and spicy herbal."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "tobacco",
+      "name": {
+        "tr": "Tobacco",
+        "en": "tobacco"
+      },
+      "family": {
+        "tr": "Odunsu / Dumansı",
+        "en": "Odunsu / Dumansı"
+      },
+      "origin": "natural",
+      "facets": [
+        "warm",
+        "smoky",
+        "dark",
+        "rich"
+      ],
+      "description": {
+        "tr": "Sıcak, kuru ve dumansı.",
+        "en": "Warm, dry and smoky."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "tonka-bean",
+      "name": {
+        "tr": "Tonka Bean",
+        "en": "tonka bean"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "natural",
+      "facets": [
+        "sweet",
+        "warm",
+        "powdery",
+        "creamy"
+      ],
+      "description": {
+        "tr": "Vanilyamsı, bademimsi ve sıcak.",
+        "en": "Vanillic, almond-like and warm."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "tuberose",
+      "name": {
+        "tr": "Tuberose",
+        "en": "tuberose"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "creamy",
+        "sensual",
+        "rich"
+      ],
+      "description": {
+        "tr": "Kremsi ve yoğun beyaz çiçeksi.",
+        "en": "Creamy and intense white floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "vanilla",
+      "name": {
+        "tr": "Vanilya",
+        "en": "vanilla"
+      },
+      "family": {
+        "tr": "Gurme",
+        "en": "Gurme"
+      },
+      "origin": "natural",
+      "facets": [
+        "sweet",
+        "warm",
+        "creamy",
+        "soft"
+      ],
+      "description": {
+        "tr": "Tatlı, sıcak ve kremsi.",
+        "en": "Sweet, warm and creamy."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "vetiver",
+      "name": {
+        "tr": "Vetiver",
+        "en": "vetiver"
+      },
+      "family": {
+        "tr": "Odunsu / Topraksı",
+        "en": "Odunsu / Topraksı"
+      },
+      "origin": "natural",
+      "facets": [
+        "earthy",
+        "dry",
+        "green",
+        "woody"
+      ],
+      "description": {
+        "tr": "Kuru, yeşil ve topraksı odun.",
+        "en": "Dry, green and earthy wood."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "violet",
+      "name": {
+        "tr": "Violet",
+        "en": "violet"
+      },
+      "family": {
+        "tr": "Çiçeksi / Pudramsı",
+        "en": "Çiçeksi / Pudramsı"
+      },
+      "origin": "natural",
+      "facets": [
+        "powdery",
+        "floral",
+        "soft",
+        "elegant"
+      ],
+      "description": {
+        "tr": "Pudramsı ve yumuşak çiçeksi.",
+        "en": "Powdery and soft floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "watery",
+      "name": {
+        "tr": "Watery Notes",
+        "en": "watery"
+      },
+      "family": {
+        "tr": "Deniz / Mineral",
+        "en": "Deniz / Mineral"
+      },
+      "origin": "accord",
+      "facets": [
+        "aquatic",
+        "fresh",
+        "airy",
+        "clean"
+      ],
+      "description": {
+        "tr": "Şeffaf, sulu ve ferah.",
+        "en": "Transparent, watery and fresh."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "white-musk",
+      "name": {
+        "tr": "White Musk",
+        "en": "white musk"
+      },
+      "family": {
+        "tr": "Misk",
+        "en": "Misk"
+      },
+      "origin": "accord",
+      "facets": [
+        "clean",
+        "soft",
+        "skin-like",
+        "airy"
+      ],
+      "description": {
+        "tr": "Temiz, yumuşak ve ten benzeri.",
+        "en": "Clean, soft and skin-like."
+      },
+      "aliases": [
+        "white-musk"
+      ],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "ylang-ylang",
+      "name": {
+        "tr": "Ylang-Ylang",
+        "en": "ylang-ylang"
+      },
+      "family": {
+        "tr": "Çiçeksi",
+        "en": "Çiçeksi"
+      },
+      "origin": "natural",
+      "facets": [
+        "floral",
+        "creamy",
+        "sensual",
+        "sweet"
+      ],
+      "description": {
+        "tr": "Egzotik, kremsi ve tatlı çiçeksi.",
+        "en": "Exotic, creamy and sweet floral."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    },
+    {
+      "id": "yuzu",
+      "name": {
+        "tr": "Yuzu",
+        "en": "yuzu"
+      },
+      "family": {
+        "tr": "Narenciye",
+        "en": "Narenciye"
+      },
+      "origin": "natural",
+      "facets": [
+        "citrus",
+        "fresh",
+        "bright",
+        "aromatic"
+      ],
+      "description": {
+        "tr": "Keskin, aromatik ve parlak narenciye.",
+        "en": "Sharp, aromatic and bright citrus."
+      },
+      "aliases": [],
+      "source": "Scento Open Dataset (CC BY 4.0) & Curated Vocabulary"
+    }
+  ],
+  "license": "CC BY 4.0 - Scento Open Dataset & Scent Discovery Engine"
+}

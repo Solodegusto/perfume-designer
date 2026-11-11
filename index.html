@@ -1,72 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Perfume Designer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f0ea">
+<title>Koku Keşfi | Scent Discovery</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Create Your Perfume</h1>
-  <p>Select your personality traits:</p>
-  <div id="personalities"></div>
-  <button id="create">Generate My Perfume</button>
-  <h2>Result</h2>
-  <div id="result"></div>
-
-  <script>
-    let selectedPersonalities = [];
-    let notesData = [];
-
-    // Load JSON
-    fetch('notes.json')
-      .then(res => res.json())
-      .then(data => {
-        notesData = data;
-
-        // Unique personalities
-        const personalities = [...new Set(data.map(n => n.personality))];
-        const container = document.getElementById('personalities');
-
-        personalities.forEach((p) => {
-          const label = document.createElement('label');
-          label.innerHTML = `<input type="checkbox" value="${p}"> ${p}`;
-          container.appendChild(label);
-          container.appendChild(document.createElement('br'));
-        });
-      });
-
-    document.getElementById('create').addEventListener('click', () => {
-      const checkboxes = document.querySelectorAll('#personalities input:checked');
-      if (checkboxes.length === 0) {
-        alert("Please select at least one personality.");
-        return;
-      }
-
-      selectedPersonalities = Array.from(checkboxes).map(cb => cb.value);
-
-      // Filter notes
-      const selectedNotes = notesData.filter(n => selectedPersonalities.includes(n.personality));
-
-      // Similarity calculation (most frequent family)
-      const familyCount = {};
-      selectedNotes.forEach(n => {
-        familyCount[n.family] = (familyCount[n.family] || 0) + 1;
-      });
-      const topFamily = Object.entries(familyCount).sort((a,b)=>b[1]-a[1])[0];
-
-      // Uniqueness simulation
-      const uniqueness = Math.floor(Math.random() * 50) + 50; // 50-100
-
-      // Personalities string
-      const personalitiesStr = selectedPersonalities.join(", ");
-
-      document.getElementById('result').innerHTML = `
-        <p><b>Similarity:</b> Your perfume design is ${60 + Math.floor(Math.random()*30)}% close to ${topFamily[0]} scents.</p>
-        <p><b>Uniqueness:</b> Only ${Math.floor(Math.random()*30)+10}% of users have selected this combination; quite unique.</p>
-        <p><b>Personality profile:</b> The perfume character is ${personalitiesStr.toLowerCase()}.</p>
-        <p><b>Suggested notes:</b> ${selectedNotes.map(n=>n.name).join(", ")}</p>
-      `;
-    });
-  </script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#top">SCENT <span>DISCOVERY</span></a><div class="top-actions"><button id="history-toggle" class="quiet" type="button" data-i18n="history">Geçmiş</button><div id="lang-switch"><button data-lang="tr" class="active">TR</button><button data-lang="en">EN</button></div></div></header>
+<main id="top" class="shell">
+<section class="hero"><p class="eyebrow" data-i18n="eyebrow">KOKUNU KEŞFET</p><h1 data-i18n="heading">Kendini yansıtan, seni tamamlayan kokuları keşfet.</h1><p class="intro" data-i18n="intro">Markalardan önce kokulara odaklan. Nasıl olduğunu, nasıl hissetmek istediğini ve nasıl algılanmak istediğini seç.</p><div class="brand-promise"><p class="brand-promise-en">A fragrance can reflect who you are, complement who you are, or express who you want to be.</p><p class="brand-promise-tr">Bir parfüm kim olduğunu yansıtabilir, seni tamamlayabilir veya olmak istediğin kişiyi ifade edebilir.</p></div></section>
+<section class="panel"><div class="section-heading"><div><p class="eyebrow" data-i18n="step1">ADIM 01</p><h2 data-i18n="profileTitle">Koku niyetini belirle</h2></div><span id="selected-count" class="count">0</span></div>
+<p class="hint" data-i18n="selfHint">Önce şu anki kişiliğinden, enerjinden ve tarzından izler seç.</p><div id="self-groups" class="trait-groups"></div>
+<div class="intent-grid"><section class="intent-panel"><p class="eyebrow" data-i18n="step2">ADIM 02</p><h3 data-i18n="transformTitle">Nasıl hissetmek istiyorum?</h3><p class="micro" data-i18n="transformHint">Kendinde keşfetmek veya deneyimlemek istediğin hisleri seç.</p><div id="intention-options" class="chips"></div></section><section class="intent-panel"><p class="eyebrow" data-i18n="step3">ADIM 03</p><h3 data-i18n="expressTitle">Nasıl algılanmak istiyorum?</h3><p class="micro" data-i18n="expressHint">Çevrene vermek istediğin izlenimi seç.</p><div id="expression-options" class="chips"></div></section></div>
+<div class="actions main-actions"><button id="discover" class="primary" data-i18n="discover">Koku önerilerimi keşfet</button><button id="clear" class="secondary" disabled data-i18n="clear">Temizle ↺</button></div><p id="warning" class="warning" role="status"></p></section>
+<section id="results" class="panel hidden"><div class="section-heading"><div><p class="eyebrow" data-i18n="step4">ADIM 04</p><h2 data-i18n="resultsTitle">Sana önerilen koku notaları</h2></div></div><div id="profile-summary"></div><p class="micro" data-i18n="scoreCaution">Sıralama, seçtiğin tercihler ile nota profillerinin kural tabanlı örtüşmesine dayanır. Kişilik testi veya bilimsel koku uyumu ölçümü değildir.</p><div id="recommendations" class="note-grid"></div><div class="blend-box"><h3 data-i18n="blendTitle">Kendi koku kombinasyonunu oluştur</h3><p class="micro" data-i18n="blendHint">Önerilerden beğendiğin notaları seçerek kişisel bir koku paleti oluştur.</p><div id="blend-list" class="chips"></div><button id="save-blend" class="secondary" data-i18n="saveBlend">Koku paletimi kaydet</button><p id="blend-status" class="micro"></p></div></section>
+<section class="panel"><div class="section-heading"><div><p class="eyebrow" data-i18n="explore">KEŞİF KÜTÜPHANESİ</p><h2 data-i18n="libraryTitle">Nota ve koku materyali kütüphanesi</h2></div><span id="library-count" class="count">105</span></div><p class="hint" data-i18n="libraryHint">Notaları ara, ailelerine ve materyal türlerine göre keşfet.</p><div class="library-tools"><input id="note-search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Nota ara / Search notes"><select id="family-filter"><option value="all" data-i18n="allFamilies">Tüm gruplar</option></select><select id="origin-filter"><option value="all" data-i18n="allOrigins">Tüm türler</option><option value="natural" data-i18n="natural">Doğal</option><option value="synthetic" data-i18n="synthetic">Sentetik</option><option value="accord" data-i18n="accord">Akor / akor etkisi</option><option value="both" data-i18n="both">Her ikisi</option><option value="unclassified" data-i18n="unclassified">Sınıflandırılmamış</option></select></div><div id="library-grid" class="note-grid"></div></section>
+<section class="panel"><div class="section-heading"><div><p class="eyebrow" data-i18n="personal">KİŞİSEL ALANIN</p><h2 data-i18n="personalTitle">Kaydettiklerin</h2></div></div><div class="tool-grid"><article class="tool-card"><span class="tool-icon">♡</span><h3 data-i18n="favorites">Favori notalar</h3><div id="favorites"></div></article><article class="tool-card"><span class="tool-icon">✧</span><h3 data-i18n="savedPalettes">Koku paletlerim</h3><div id="palettes"></div></article></div></section>
+<section id="history-panel" class="panel hidden"><div class="section-heading"><h2 data-i18n="historyTitle">Keşif geçmişi</h2><button id="clear-history" class="text-button" data-i18n="clearHistory">Geçmişi temizle</button></div><div id="history-list"></div></section>
+<section class="disclaimer">
+<h2 data-i18n="disclaimerTitle">Bilgilendirme ve Yasal Uyarı</h2>
+<p data-i18n="disclaimer">Uygulamada sunulan nota benzerlikleri ve parfüm eşleştirmeleri, yapay zekâ destekli algoritmalar tarafından oluşturulan tahmini sonuçlardır. Bilgilendirme ve keşif amacı taşır; resmî ürün bilgisi veya birebir koku eşdeğerliği garantisi vermez.</p>
+<p data-i18n="disclaimerBrand">Listelenen marka ve ürünler ilgili hak sahiplerine aittir. Uygulamamızın bahsi geçen markalarla herhangi bir resmî bağlantısı, sponsorluğu veya iş ortaklığı bulunmamaktadır.</p>
+<p class="source-credit">Açık Veri Kaynağı: <strong>Scento Open Dataset</strong> — <a href="https://github.com/Scento-com/perfume-dataset" target="_blank" rel="noopener">Perfume Database</a> (CC BY 4.0 lisansı kapsamında kaynak gösterilerek kullanılmaktadır).</p>
+</section>
+<footer><span>SCENT DISCOVERY ENGINE</span><span data-i18n="footer">Koku kişiseldir. Keşif de öyle.</span></footer>
+</main>
+<script>
+(()=>{'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const STORE={lang:'sd_lang',favorites:'sd_favorites',history:'sd_history',palettes:'sd_palettes'};
+const T={tr:{title:'Koku Keşfi',eyebrow:'KOKUNU KEŞFET',heading:'Kendini yansıtan, seni tamamlayan kokuları keşfet.',intro:'Markalardan önce kokulara odaklan. Nasıl olduğunu, nasıl hissetmek istediğini ve nasıl algılanmak istediğini seç.',step1:'ADIM 01',profileTitle:'Koku niyetini belirle',selfHint:'Önce şu anki kişiliğinden, enerjinden ve tarzından izler seç.',step2:'ADIM 02',transformTitle:'Nasıl hissetmek istiyorum?',transformHint:'Kendinde keşfetmek veya deneyimlemek istediğin hisleri seç.',step3:'ADIM 03',expressTitle:'Nasıl algılanmak istiyorum?',expressHint:'Çevrene vermek istediğin izlenimi seç.',discover:'Koku önerilerimi keşfet',clear:'Temizle ↺',step4:'ADIM 04',resultsTitle:'Sana önerilen koku notaları',scoreCaution:'Sıralama, seçtiğin tercihler ile nota profillerinin kural tabanlı örtüşmesine dayanır. Kişilik testi veya bilimsel koku uyumu ölçümü değildir.',blendTitle:'Kendi koku kombinasyonunu oluştur',blendHint:'Önerilerden beğendiğin notaları seçerek kişisel bir koku paleti oluştur.',saveBlend:'Koku paletimi kaydet',explore:'KEŞİF KÜTÜPHANESİ',libraryTitle:'Nota ve koku materyali kütüphanesi',libraryHint:'Notaları ara, ailelerine ve materyal türlerine göre keşfet.',searchPlaceholder:'Nota ara...',allFamilies:'Tüm gruplar',allOrigins:'Tüm türler',natural:'Doğal',synthetic:'Sentetik',accord:'Akor / akor etkisi',both:'Her ikisi',unclassified:'Sınıflandırılmamış',personal:'KİŞİSEL ALANIN',personalTitle:'Kaydettiklerin',favorites:'Favori notalar',savedPalettes:'Koku paletlerim',history:'Geçmiş',historyTitle:'Keşif geçmişi',clearHistory:'Geçmişi temizle',disclaimerTitle:'Bilgilendirme',disclaimer:'Koku notaları ve materyal açıklamaları keşif amacıyla sunulur. Kişilik, ruh hâli ve koku arasındaki ilişkiler algoritmanın test edilmesi gereken varsayımlarıdır; psikolojik veya bilimsel değerlendirme değildir. Materyal adları, doğal/sentetik/akor ayrımları ve tanımlamalar kaynaklarına göre değişebilir.',footer:'Koku kişiseldir. Keşif de öyle.',choose:'En az bir özellik veya niyet seçmelisin.',noResults:'Bu seçimlerle eşleşen nota bulunamadı. Başka bir tercih kombinasyonu dene.',self:'Şu anki benliğim',transform:'Aradığım his',express:'Vermek istediğim izlenim',match:'Tercih uyumu',favorite:'Favori',unfavorite:'Favoriden çıkar',added:'Kaydedildi',remove:'Sil',saved:'Koku paletin kaydedildi.',empty:'Henüz kayıt yok.',blendEmpty:'Koku paletine eklemek için önerilerden nota seç.',historyEmpty:'Henüz keşif geçmişi yok.',family:'Koku grubu',origin:'Materyal türü',naturalLabel:'Doğal materyal',syntheticLabel:'Sentetik aroma materyali',accordLabel:'Akor / koku etkisi',bothLabel:'Doğal ve sentetik kullanımı olabilir',unknownLabel:'Henüz sınıflandırılmadı'},
+en:{title:'Scent Discovery',eyebrow:'DISCOVER YOUR SCENT',heading:'Discover scents that reflect you and complement who you are.',intro:'Explore scent before brands. Choose who you are, how you want to feel and how you want to be perceived.',step1:'STEP 01',profileTitle:'Define your scent intention',selfHint:'Start with traits that describe your current personality, energy and style.',step2:'STEP 02',transformTitle:'How do I want to feel?',transformHint:'Choose feelings you would like to explore or experience.',step3:'STEP 03',expressTitle:'How do I want to be perceived?',expressHint:'Choose the impression you would like to communicate.',discover:'Discover my scent suggestions',clear:'Reset ↺',step4:'STEP 04',resultsTitle:'Scent notes recommended for you',scoreCaution:'Rankings are based on rule-based overlap between your preferences and note profiles. This is not a personality test or a scientific measure of scent compatibility.',blendTitle:'Create your own scent combination',blendHint:'Select notes you like from the recommendations to build a personal scent palette.',saveBlend:'Save my scent palette',explore:'DISCOVERY LIBRARY',libraryTitle:'Note and scent-material library',libraryHint:'Search notes and explore by family and material type.',searchPlaceholder:'Search notes...',allFamilies:'All groups',allOrigins:'All types',natural:'Natural',synthetic:'Synthetic',accord:'Accord / effect',both:'Both',unclassified:'Unclassified',personal:'YOUR SPACE',personalTitle:'Your saved items',favorites:'Favorite notes',savedPalettes:'My scent palettes',history:'History',historyTitle:'Discovery history',clearHistory:'Clear history',disclaimerTitle:'Disclaimer',disclaimer:'Scent notes and material descriptions are provided for exploration. Relationships between personality, mood and scent are hypotheses to be tested in the algorithm; they are not psychological or scientific assessments. Material names, natural/synthetic/accord classifications and descriptions may vary by source.',footer:'Scent is personal. Discovery is too.',choose:'Choose at least one trait or intention.',noResults:'No notes matched these selections. Try another combination.',self:'Current self',transform:'Desired feeling',express:'Desired impression',match:'Preference match',favorite:'Favorite',unfavorite:'Remove favorite',added:'Saved',remove:'Remove',saved:'Your scent palette has been saved.',empty:'Nothing saved yet.',blendEmpty:'Select notes from recommendations to build your palette.',historyEmpty:'No discovery history yet.',family:'Scent group',origin:'Material type',naturalLabel:'Natural material',syntheticLabel:'Synthetic aroma material',accordLabel:'Accord / scent effect',bothLabel:'May be natural and synthetic',unknownLabel:'Not yet classified'}};
+let lang=localStorage.getItem(STORE.lang)||((navigator.language||'en').toLowerCase().startsWith('tr')?'tr':'en'),traitsData,matching,library=[],selectedSelf=new Set(),selectedIntent=new Set(),selectedExpress=new Set(),blend=new Set(),latest=[];
+const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},write=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim().replace(/\s+/g,' ');
+const slug=s=>norm(s).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const tr=(obj)=>obj?.[lang]??obj?.en??'';const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function t(k){return T[lang][k]||k}
+function setLanguage(){document.documentElement.lang=lang;$$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(T[lang][k])el.textContent=T[lang][k]});$$('[data-i18n-placeholder]').forEach(el=>el.placeholder=t(el.dataset.i18nPlaceholder));$$('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));renderSelf();renderModes();renderLibrary();renderFavorites();renderPalettes();if(latest.length)renderResults(latest);}
+function renderSelf(){const host=$('#self-groups');host.innerHTML='';traitsData.categories.forEach(cat=>{const section=document.createElement('section');section.className='trait-group';section.innerHTML=`<h3>${esc(tr(cat))}</h3><div class="chips">${cat.traits.map(x=>`<label class="chip"><input type="checkbox" data-self="${esc(x.id)}" ${selectedSelf.has(x.id)?'checked':''}><span>${esc(tr(x))}</span></label>`).join('')}</div>`;host.append(section)});$$('[data-self]').forEach(x=>x.addEventListener('change',()=>{x.checked?selectedSelf.add(x.dataset.self):selectedSelf.delete(x.dataset.self);updateCount()}));updateCount()}
+function renderModes(){[['intention-options',matching.intentions,selectedIntent],['expression-options',matching.expressions,selectedExpress]].forEach(([id,items,set])=>{$('#'+id).innerHTML=items.map(x=>`<label class="chip"><input type="checkbox" data-mode="${id}" value="${x.id}" ${set.has(x.id)?'checked':''}><span>${lang==='tr'?x.tr:x.en}</span></label>`).join('')});$$('[data-mode]').forEach(x=>x.addEventListener('change',()=>{const set=x.dataset.mode==='intention-options'?selectedIntent:selectedExpress;x.checked?set.add(x.value):set.delete(x.value);updateCount()}));}
+function updateCount(){const n=selectedSelf.size+selectedIntent.size+selectedExpress.size;$('#selected-count').textContent=n;$('#clear').disabled=n===0&&latest.length===0;}
+function canonicalMap(){const m=new Map();library.forEach(x=>{m.set(norm(x.id),x);m.set(norm(tr(x.name)),x);m.set(norm(x.name.en),x);(x.aliases||[]).forEach(a=>m.set(norm(a),x))});return m}
+function scoreNote(note){let self=0,intent=0,express=0;const selfTraits=traitsData.categories.flatMap(c=>c.traits).filter(x=>selectedSelf.has(x.id));const direct=new Set(selfTraits.flatMap(x=>x.notes||[]).map(norm));if(direct.has(norm(note.name.en))||direct.has(norm(note.id)))self=1;else if((note.aliases||[]).some(a=>direct.has(norm(a))))self=1;
+const noteNames=new Set([norm(note.name.en),norm(note.id),...(note.aliases||[]).map(norm)]);const facets=new Set(note.facets||[]);
+for(const id of selectedIntent){const x=matching.intentions.find(y=>y.id===id);if(!x)continue;const exact=(x.notes||[]).some(n=>noteNames.has(norm(n))||noteNames.has(norm(slug(n))));const overlap=(x.facets||[]).filter(f=>facets.has(f)).length/Math.max(1,(x.facets||[]).length);intent=Math.max(intent,exact?1:overlap)}
+for(const id of selectedExpress){const x=matching.expressions.find(y=>y.id===id);if(!x)continue;const exact=(x.notes||[]).some(n=>noteNames.has(norm(n))||noteNames.has(norm(slug(n))));const overlap=(x.facets||[]).filter(f=>facets.has(f)).length/Math.max(1,(x.facets||[]).length);express=Math.max(express,exact?1:overlap)}
+const parts=[];if(selectedSelf.size)parts.push([self,.4]);if(selectedIntent.size)parts.push([intent,.35]);if(selectedExpress.size)parts.push([express,.25]);const totalW=parts.reduce((a,b)=>a+b[1],0)||1;const overall=parts.reduce((a,b)=>a+b[0]*b[1],0)/totalW;return {...note,selfScore:self,intentScore:intent,expressScore:express,score:Math.round(overall*100)}}
+function discover(){if(!selectedSelf.size&&!selectedIntent.size&&!selectedExpress.size){$('#warning').textContent=t('choose');return}$('#warning').textContent='';latest=library.map(scoreNote).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||xName(a).localeCompare(xName(b))).slice(0,30);renderResults(latest);$('#results').classList.remove('hidden');const summary=[...traitsData.categories.flatMap(c=>c.traits.filter(x=>selectedSelf.has(x.id)).map(x=>tr(x))),...matching.intentions.filter(x=>selectedIntent.has(x.id)).map(x=>lang==='tr'?x.tr:x.en),...matching.expressions.filter(x=>selectedExpress.has(x.id)).map(x=>lang==='tr'?x.tr:x.en)];$('#profile-summary').innerHTML=`<div class="profile-box"><strong>${esc(summary.join(' · '))}</strong><p class="micro">${esc(t('self'))}: ${selectedSelf.size} · ${esc(t('transform'))}: ${selectedIntent.size} · ${esc(t('express'))}: ${selectedExpress.size}</p></div>`;const h=read(STORE.history,[]);h.unshift({id:Date.now(),date:new Date().toISOString(),self:[...selectedSelf],intent:[...selectedIntent],express:[...selectedExpress]});write(STORE.history,h.slice(0,20));renderHistory();updateCount();$('#results').scrollIntoView({behavior:'smooth',block:'start'});}
+function xName(x){return tr(x.name)}
+function renderResults(list){const host=$('#recommendations');host.innerHTML='';if(!list.length){host.innerHTML=`<p class="empty">${esc(t('noResults'))}</p>`;return}list.slice(0,15).forEach(n=>{const card=document.createElement('article');card.className='note-card';const origin=t(n.origin==='natural'?'naturalLabel':n.origin==='synthetic'?'syntheticLabel':n.origin==='both'?'bothLabel':n.origin==='accord'?'accordLabel':'unknownLabel');card.innerHTML=`<div class="note-card-head"><span class="tag">${esc(tr(n.family))}</span><b class="score">${n.score}%</b></div><h3>${esc(xName(n))}</h3><p>${esc(tr(n.description))}</p><p class="micro">${esc(origin)}</p><div class="score-breakdown">${selectedSelf.size?`<span>${esc(t('self'))}: ${Math.round(n.selfScore*100)}%</span>`:''}${selectedIntent.size?`<span>${esc(t('transform'))}: ${Math.round(n.intentScore*100)}%</span>`:''}${selectedExpress.size?`<span>${esc(t('express'))}: ${Math.round(n.expressScore*100)}%</span>`:''}</div><button class="text-button" data-blend="${esc(n.id)}">${blend.has(n.id)?'✓': '+'} ${esc(t('blendTitle'))}</button><button class="favorite-btn" data-favorite="${esc(n.id)}">${read(STORE.favorites,[]).includes(n.id)?'♥':'♡'} ${esc(t('favorite'))}</button>`;host.append(card)});$$('[data-blend]').forEach(b=>b.addEventListener('click',()=>{blend.has(b.dataset.blend)?blend.delete(b.dataset.blend):blend.add(b.dataset.blend);renderResults(latest);renderBlend()}));$$('[data-favorite]').forEach(b=>b.addEventListener('click',()=>{let f=read(STORE.favorites,[]);f=f.includes(b.dataset.favorite)?f.filter(x=>x!==b.dataset.favorite):[...f,b.dataset.favorite];write(STORE.favorites,f);renderResults(latest);renderFavorites()}));renderBlend()}
+function renderBlend(){const host=$('#blend-list');if(!host)return;const items=library.filter(x=>blend.has(x.id));host.innerHTML=items.length?items.map(x=>`<span class="profile-chip">${esc(xName(x))}</span>`).join(''):`<span class="micro">${esc(t('blendEmpty'))}</span>`}
+function saveBlend(){if(!blend.size)return;const p=read(STORE.palettes,[]);p.unshift({id:Date.now(),notes:[...blend]});write(STORE.palettes,p.slice(0,20));$('#blend-status').textContent=t('saved');renderPalettes()}
+function familyOptions(){const fam=[...new Map(library.map(x=>[tr(x.family),x.family])).entries()].sort((a,b)=>a[0].localeCompare(b[0]));$('#family-filter').innerHTML=`<option value="all">${esc(t('allFamilies'))}</option>`+fam.map(([label,obj])=>`<option value="${esc(obj.en)}">${esc(label)}</option>`).join('')}
+function renderLibrary(){const q=norm($('#note-search').value),family=$('#family-filter').value,origin=$('#origin-filter').value;const items=library.filter(x=>(!q||[x.name.tr,x.name.en,x.id,...x.aliases,tr(x.family),tr(x.description)].some(v=>norm(v).includes(q)))&&(family==='all'||x.family.en===family)&&(origin==='all'||x.origin===origin));$('#library-count').textContent=items.length+'/'+library.length;$('#library-grid').innerHTML=items.map(n=>`<article class="note-card library-card"><div class="note-card-head"><span class="tag">${esc(tr(n.family))}</span><button class="heart" data-favorite="${esc(n.id)}">${read(STORE.favorites,[]).includes(n.id)?'♥':'♡'}</button></div><h3>${esc(xName(n))}</h3><p>${esc(tr(n.description))}</p><p class="micro">${esc(t(n.origin==='natural'?'naturalLabel':n.origin==='synthetic'?'syntheticLabel':n.origin==='both'?'bothLabel':n.origin==='accord'?'accordLabel':'unknownLabel'))}</p></article>`).join('')||`<p class="empty">${esc(t('noResults'))}</p>`;$$('#library-grid [data-favorite]').forEach(b=>b.addEventListener('click',()=>{let f=read(STORE.favorites,[]);f=f.includes(b.dataset.favorite)?f.filter(x=>x!==b.dataset.favorite):[...f,b.dataset.favorite];write(STORE.favorites,f);renderLibrary();renderFavorites()}));}
+function renderFavorites(){const f=read(STORE.favorites,[]);$('#favorites').innerHTML=f.length?f.map(id=>{const n=library.find(x=>x.id===id);return n?`<div class="simple-row"><b>${esc(xName(n))}</b><button class="text-button" data-unfav="${esc(id)}">${esc(t('remove'))}</button></div>`:''}).join(''):`<p class="empty">${esc(t('empty'))}</p>`;$$('[data-unfav]').forEach(b=>b.addEventListener('click',()=>{write(STORE.favorites,read(STORE.favorites,[]).filter(x=>x!==b.dataset.unfav));renderFavorites();renderLibrary()}))}
+function renderPalettes(){const p=read(STORE.palettes,[]);$('#palettes').innerHTML=p.length?p.map(x=>`<div class="simple-row"><span>${x.notes.map(id=>{const n=library.find(z=>z.id===id);return n?esc(xName(n)):''}).filter(Boolean).join(' · ')}</span><button class="text-button" data-del-palette="${x.id}">${esc(t('remove'))}</button></div>`).join(''):`<p class="empty">${esc(t('empty'))}</p>`;$$('[data-del-palette]').forEach(b=>b.addEventListener('click',()=>{write(STORE.palettes,read(STORE.palettes,[]).filter(x=>String(x.id)!==b.dataset.delPalette));renderPalettes()}))}
+function renderHistory(){const h=read(STORE.history,[]);$('#history-list').innerHTML=h.length?h.map(x=>`<div class="simple-row"><span><b>${new Date(x.date).toLocaleString(lang==='tr'?'tr-TR':'en-US')}</b><small>${esc([...x.self,...x.intent,...x.express].join(' · '))}</small></span></div>`).join(''):`<p class="empty">${esc(t('historyEmpty'))}</p>`}
+function clearAll(){selectedSelf.clear();selectedIntent.clear();selectedExpress.clear();latest=[];$('#results').classList.add('hidden');$('#warning').textContent='';renderSelf();renderModes();updateCount()}
+async function init(){try{const [a,b,c]=await Promise.all([fetch('self-traits.json').then(r=>r.json()),fetch('matching.json').then(r=>r.json()),fetch('scent-library.json').then(r=>r.json())]);traitsData=a;matching=b;library=c.materials;$('#library-count').textContent=library.length;familyOptions();renderSelf();renderModes();setLanguage();renderLibrary();renderFavorites();renderPalettes();}catch(e){$('#warning').textContent='Could not load the discovery data. Check that all JSON files are in the repository root.'}
+$$('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;write(STORE.lang,lang);setLanguage();familyOptions()}));$('#discover').addEventListener('click',discover);$('#clear').addEventListener('click',clearAll);$('#note-search').addEventListener('input',renderLibrary);$('#family-filter').addEventListener('change',renderLibrary);$('#origin-filter').addEventListener('change',renderLibrary);$('#save-blend').addEventListener('click',saveBlend);$('#history-toggle').addEventListener('click',()=>{$('#history-panel').classList.toggle('hidden');renderHistory()});$('#clear-history').addEventListener('click',()=>{write(STORE.history,[]);renderHistory()});}
+init();
+})();
+</script>
+</body></html>

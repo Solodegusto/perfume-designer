@@ -1,0 +1,378 @@
+{
+  "intentions": [
+    {
+      "id": "mysterious",
+      "tr": "Gizemli",
+      "en": "Mysterious",
+      "facets": [
+        "dark",
+        "deep",
+        "smoky",
+        "resinous",
+        "mysterious"
+      ],
+      "notes": [
+        "incense",
+        "labdanum",
+        "oud",
+        "smoke",
+        "myrrh",
+        "patchouli",
+        "leather"
+      ]
+    },
+    {
+      "id": "confident",
+      "tr": "Özgüvenli",
+      "en": "Confident",
+      "facets": [
+        "bold",
+        "warm",
+        "rich",
+        "intense"
+      ],
+      "notes": [
+        "saffron",
+        "cedar",
+        "amber",
+        "black pepper",
+        "tobacco",
+        "vetiver"
+      ]
+    },
+    {
+      "id": "serene",
+      "tr": "Huzurlu",
+      "en": "Serene",
+      "facets": [
+        "calm",
+        "soft",
+        "clean",
+        "airy"
+      ],
+      "notes": [
+        "lavender",
+        "chamomile",
+        "tea",
+        "white musk",
+        "iris",
+        "cotton flower"
+      ]
+    },
+    {
+      "id": "adventurous",
+      "tr": "Maceracı",
+      "en": "Adventurous",
+      "facets": [
+        "energetic",
+        "bright",
+        "green",
+        "spicy"
+      ],
+      "notes": [
+        "ginger",
+        "juniper",
+        "cardamom",
+        "lime",
+        "cypress",
+        "pink pepper"
+      ]
+    },
+    {
+      "id": "sensual",
+      "tr": "Duyusal",
+      "en": "Sensual",
+      "facets": [
+        "sensual",
+        "warm",
+        "creamy",
+        "rich"
+      ],
+      "notes": [
+        "jasmine",
+        "tuberose",
+        "sandalwood",
+        "vanilla",
+        "musk",
+        "ylang-ylang"
+      ]
+    },
+    {
+      "id": "fresh",
+      "tr": "Ferah",
+      "en": "Fresh",
+      "facets": [
+        "fresh",
+        "cool",
+        "bright",
+        "clean"
+      ],
+      "notes": [
+        "bergamot",
+        "lemon",
+        "mint",
+        "marine",
+        "grapefruit",
+        "calone"
+      ]
+    },
+    {
+      "id": "elegant",
+      "tr": "Zarif",
+      "en": "Elegant",
+      "facets": [
+        "elegant",
+        "powdery",
+        "soft",
+        "airy"
+      ],
+      "notes": [
+        "iris",
+        "rose",
+        "neroli",
+        "aldehydes",
+        "violet",
+        "magnolia"
+      ]
+    },
+    {
+      "id": "playful",
+      "tr": "Neşeli",
+      "en": "Playful",
+      "facets": [
+        "playful",
+        "bright",
+        "juicy",
+        "sweet"
+      ],
+      "notes": [
+        "mandarin",
+        "pear",
+        "raspberry",
+        "peach",
+        "apple",
+        "pink pepper"
+      ]
+    },
+    {
+      "id": "grounded",
+      "tr": "Dengeli / Topraklı",
+      "en": "Grounded",
+      "facets": [
+        "grounded",
+        "earthy",
+        "woody",
+        "dry"
+      ],
+      "notes": [
+        "vetiver",
+        "cedar",
+        "oakmoss",
+        "patchouli",
+        "sandalwood",
+        "cypress"
+      ]
+    },
+    {
+      "id": "bold",
+      "tr": "Cesur",
+      "en": "Bold",
+      "facets": [
+        "bold",
+        "intense",
+        "spicy",
+        "dark"
+      ],
+      "notes": [
+        "black pepper",
+        "saffron",
+        "oud",
+        "leather",
+        "tobacco",
+        "cinnamon"
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "id": "enigmatic",
+      "tr": "Gizemli",
+      "en": "Enigmatic",
+      "facets": [
+        "mysterious",
+        "dark",
+        "deep",
+        "smoky"
+      ],
+      "notes": [
+        "incense",
+        "oud",
+        "labdanum",
+        "smoke",
+        "myrrh"
+      ]
+    },
+    {
+      "id": "sophisticated",
+      "tr": "Sofistike",
+      "en": "Sophisticated",
+      "facets": [
+        "elegant",
+        "dry",
+        "powdery",
+        "woody"
+      ],
+      "notes": [
+        "iris",
+        "vetiver",
+        "cedar",
+        "aldehydes",
+        "sandalwood"
+      ]
+    },
+    {
+      "id": "charismatic",
+      "tr": "Karizmatik",
+      "en": "Charismatic",
+      "facets": [
+        "bold",
+        "rich",
+        "warm",
+        "intense"
+      ],
+      "notes": [
+        "amber",
+        "saffron",
+        "tobacco",
+        "leather",
+        "cardamom"
+      ]
+    },
+    {
+      "id": "alluring",
+      "tr": "Çekici",
+      "en": "Alluring",
+      "facets": [
+        "sensual",
+        "warm",
+        "creamy",
+        "rich"
+      ],
+      "notes": [
+        "jasmine",
+        "tuberose",
+        "vanilla",
+        "musk",
+        "ylang-ylang"
+      ]
+    },
+    {
+      "id": "approachable",
+      "tr": "Samimi",
+      "en": "Approachable",
+      "facets": [
+        "soft",
+        "clean",
+        "fresh",
+        "warm"
+      ],
+      "notes": [
+        "white musk",
+        "bergamot",
+        "pear",
+        "cotton flower",
+        "sandalwood"
+      ]
+    },
+    {
+      "id": "creative",
+      "tr": "Özgün",
+      "en": "Creative",
+      "facets": [
+        "distinctive",
+        "green",
+        "mineral",
+        "modern"
+      ],
+      "notes": [
+        "fig leaf",
+        "metallic accord",
+        "mineral accord",
+        "black tea",
+        "juniper"
+      ]
+    },
+    {
+      "id": "powerful",
+      "tr": "Güçlü",
+      "en": "Powerful",
+      "facets": [
+        "bold",
+        "woody",
+        "intense",
+        "dry"
+      ],
+      "notes": [
+        "oud",
+        "cedar",
+        "vetiver",
+        "patchouli",
+        "black pepper"
+      ]
+    },
+    {
+      "id": "luxurious",
+      "tr": "Lüks",
+      "en": "Luxurious",
+      "facets": [
+        "rich",
+        "warm",
+        "creamy",
+        "sweet"
+      ],
+      "notes": [
+        "saffron",
+        "amber",
+        "vanilla",
+        "tonka bean",
+        "sandalwood"
+      ]
+    },
+    {
+      "id": "minimalist",
+      "tr": "Minimalist",
+      "en": "Minimalist",
+      "facets": [
+        "clean",
+        "airy",
+        "dry",
+        "modern"
+      ],
+      "notes": [
+        "iso e super",
+        "white musk",
+        "linen",
+        "cedar",
+        "aldehydes"
+      ]
+    },
+    {
+      "id": "romantic",
+      "tr": "Romantik",
+      "en": "Romantic",
+      "facets": [
+        "romantic",
+        "floral",
+        "soft",
+        "sweet"
+      ],
+      "notes": [
+        "rose",
+        "peony",
+        "jasmine",
+        "violet",
+        "vanilla"
+      ]
+    }
+  ]
+}
