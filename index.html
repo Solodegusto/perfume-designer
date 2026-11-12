@@ -100,6 +100,7 @@
       <p class="eyebrow" data-i18n="analyticsTitle">KİŞİSEL KOKU İMZAN VE ANALİZ</p>
       <h2 data-i18n="frequentTitle">Fark Etmeden En Sık Yöneldiğin Notalar</h2>
     </div>
+    <button id="reset-stats" class="text-button hidden" type="button" data-i18n="resetStats">İstatistikleri sıfırla</button>
   </div>
   <div id="frequent-notes-container" class="profile-box">
     <p class="micro" data-i18n="frequentHint">Her test ve seçiminde sistem arka planda tekrar eden notalarını otomatik analiz eder ve koku imzanı çıkarır.</p>
@@ -214,7 +215,9 @@ const T={
     addPaletteBtn:'Kombine ekle',
     inPaletteBtn:'Kombinde seçili',
     impressionsCat:'İzlenim ve atmosfer',
-    repeatSuffix:'kez tekrar etti'
+    repeatSuffix:'kez tekrar etti',
+    resetStats:'İstatistikleri sıfırla',
+    resetStatsConfirm:'Nota istatistiklerin silinecek ve sayım sıfırdan başlayacak. Emin misin?'
   },
   en:{
     title:'Scent Discovery',
@@ -275,7 +278,9 @@ const T={
     addPaletteBtn:'Add to blend',
     inPaletteBtn:'Selected in blend',
     impressionsCat:'Impression & aura',
-    repeatSuffix:'times repeated'
+    repeatSuffix:'times repeated',
+    resetStats:'Reset statistics',
+    resetStatsConfirm:'Your note statistics will be deleted and counting will start from zero. Are you sure?'
   }
 };
 
@@ -448,6 +453,8 @@ function renderFrequentNotes(){
   if(!host)return;
   const sorted=Object.entries(stats).sort((a,b)=>b[1]-a[1]).slice(0,10);
   const aiBar=$('#frequent-ai-bar');
+  const resetBtn=$('#reset-stats');
+  if(resetBtn)resetBtn.classList.toggle('hidden',!sorted.length);
   if(!sorted.length){
     host.innerHTML=`<span class="micro">${esc(t('noStats'))}</span>`;
     if(aiBar)aiBar.classList.add('hidden');
@@ -738,6 +745,11 @@ async function init(){
   $('#clear-history').addEventListener('click',()=>{
     write(STORE.history,[]);
     renderHistory();
+  });
+  $('#reset-stats').addEventListener('click',()=>{
+    if(!confirm(t('resetStatsConfirm')))return;
+    try{localStorage.removeItem(STORE.stats)}catch{}
+    renderFrequentNotes();
   });
 }
 
