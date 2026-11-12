@@ -2,87 +2,692 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f0ea">
-<title>Koku Keşfi | Scent Discovery</title><link rel="stylesheet" href="style.css">
+<title data-i18n="title">Koku Keşfi</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#top">SCENT <span>DISCOVERY</span></a><div class="top-actions"><button id="history-toggle" class="quiet" type="button" data-i18n="history">Geçmiş</button><div id="lang-switch"><button data-lang="tr" class="active">TR</button><button data-lang="en">EN</button></div></div></header>
+<header class="topbar">
+  <a class="brand" href="#top" data-i18n="brandTitle">KOKU KEŞFİ</a>
+  <div class="top-actions">
+    <button id="signature-tab-btn" class="quiet" type="button" data-i18n="signatureTab">Tekrar Eden Notalarım</button>
+    <button id="history-toggle" class="quiet" type="button" data-i18n="history">Geçmiş</button>
+    <div id="lang-switch">
+      <button data-lang="tr" class="active">TR</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
 <main id="top" class="shell">
-<section class="hero"><p class="eyebrow" data-i18n="eyebrow">KOKUNU KEŞFET</p><h1 data-i18n="heading">Kendini yansıtan, seni tamamlayan kokuları keşfet.</h1><p class="intro" data-i18n="intro">Markalardan önce kokulara odaklan. Nasıl olduğunu, nasıl hissetmek istediğini ve nasıl algılanmak istediğini seç.</p><div class="brand-promise"><p class="brand-promise-en">A fragrance can reflect who you are, complement who you are, or express who you want to be.</p><p class="brand-promise-tr">Bir parfüm kim olduğunu yansıtabilir, seni tamamlayabilir veya olmak istediğin kişiyi ifade edebilir.</p></div></section>
-<section class="panel"><div class="section-heading"><div><p class="eyebrow" data-i18n="step1">ADIM 01</p><h2 data-i18n="profileTitle">Koku niyetini belirle</h2></div><span id="selected-count" class="count">0</span></div>
-<p class="hint" data-i18n="selfHint">Önce şu anki kişiliğinden, enerjinden ve tarzından izler seç.</p><div id="self-groups" class="trait-groups"></div>
-<div class="intent-grid"><section class="intent-panel"><p class="eyebrow" data-i18n="step2">ADIM 02</p><h3 data-i18n="transformTitle">Nasıl hissetmek istiyorum?</h3><p class="micro" data-i18n="transformHint">Kendinde keşfetmek veya deneyimlemek istediğin hisleri seç.</p><div id="intention-options" class="chips"></div></section><section class="intent-panel"><p class="eyebrow" data-i18n="step3">ADIM 03</p><h3 data-i18n="expressTitle">Nasıl algılanmak istiyorum?</h3><p class="micro" data-i18n="expressHint">Çevrene vermek istediğin izlenimi seç.</p><div id="expression-options" class="chips"></div></section></div>
-<div class="actions main-actions"><button id="discover" class="primary" data-i18n="discover">Koku önerilerimi keşfet</button><button id="clear" class="secondary" disabled data-i18n="clear">Temizle ↺</button></div><p id="warning" class="warning" role="status"></p></section>
-<section id="results" class="panel hidden"><div class="section-heading"><div><p class="eyebrow" data-i18n="step4">ADIM 04</p><h2 data-i18n="resultsTitle">Sana önerilen koku notaları</h2></div></div><div id="profile-summary"></div><p class="micro" data-i18n="scoreCaution">Sıralama, seçtiğin tercihler ile nota profillerinin kural tabanlı örtüşmesine dayanır. Kişilik testi veya bilimsel koku uyumu ölçümü değildir.</p><div id="recommendations" class="note-grid"></div>
-
-<!-- BLEND & GOOGLE AI BOX -->
-<div class="blend-box"><h3 data-i18n="blendTitle">Kendi koku kombinasyonunu oluştur</h3><p class="micro" data-i18n="blendHint">Önerilerden beğendiğin notaları seçerek kişisel bir koku paleti oluştur.</p><div id="blend-list" class="chips"></div>
-
-<div class="ai-controls">
-  <div class="gender-selector">
-    <label><input type="radio" name="gender" value="unisex" checked> <span data-i18n="unisex">Unisex</span></label>
-    <label><input type="radio" name="gender" value="female"> <span data-i18n="female">Kadın / Women</span></label>
-    <label><input type="radio" name="gender" value="male"> <span data-i18n="male">Erkek / Men</span></label>
+<section class="hero">
+  <p class="eyebrow" data-i18n="eyebrow">KOKUNU KEŞFET</p>
+  <h1 data-i18n="heading">Kendini yansıtan, seni tamamlayan kokuları keşfet.</h1>
+  <p class="intro" data-i18n="intro">Markalardan önce kokulara odaklan. Kim olduğunu, nasıl hissetmek ve nasıl algılanmak istediğini seç.</p>
+  <div class="brand-promise">
+    <p class="brand-promise-main" data-i18n="brandPromise">Bir parfüm kim olduğunu yansıtabilir, seni tamamlayabilir veya olmak istediğin kişiyi ifade edebilir.</p>
   </div>
-  <div class="ai-actions">
-    <button id="save-blend" class="secondary" data-i18n="saveBlend">Koku paletimi kaydet</button>
-    <button id="find-commercial-ai" class="primary ai-btn">🔍 <span data-i18n="aiSearch">Google AI ile Ticari Parfümleri Bul</span></button>
+</section>
+
+<section class="panel">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow" data-i18n="step1">ADIM 01</p>
+      <h2 data-i18n="profileTitle">Koku niyetini belirle</h2>
+    </div>
+    <span id="selected-count" class="count">0</span>
   </div>
-</div>
-<p id="blend-status" class="micro"></p></div></section>
+  <p class="hint" data-i18n="selfHint">Önce şu anki kişiliğinden, enerjinden ve tarzından izler seç.</p>
+  <div id="self-groups" class="trait-groups"></div>
+
+  <div class="intent-single">
+    <section class="intent-panel">
+      <p class="eyebrow" data-i18n="step2">ADIM 02</p>
+      <h3 data-i18n="expressTitle">Nasıl Hissetmek ve Algılanmak İstiyorum?</h3>
+      <p class="micro" data-i18n="expressHint">Kendinde deneyimlemek istediğin hisleri ve çevrene vermek istediğin izlenimi seç (Adım 01'deki tüm özellikler de burada yer alır).</p>
+      <div id="expression-groups" class="trait-groups" style="margin-top:14px;"></div>
+    </section>
+  </div>
+
+  <div class="actions main-actions">
+    <button id="discover" class="primary" data-i18n="discover">Koku önerilerimi keşfet</button>
+    <button id="clear" class="secondary" disabled data-i18n="clear">Temizle ↺</button>
+  </div>
+  <p id="warning" class="warning" role="status"></p>
+</section>
+
+<section id="results" class="panel hidden">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow" data-i18n="step3">ADIM 03</p>
+      <h2 data-i18n="resultsTitle">Sana önerilen koku notaları</h2>
+    </div>
+  </div>
+  <div id="profile-summary"></div>
+  <p class="micro" data-i18n="scoreCaution">Sıralama, seçtiğin tercihler ile nota profillerinin kural tabanlı örtüşmesine dayanır. Kişilik testi veya bilimsel koku uyumu ölçümü değildir.</p>
+  <div id="recommendations" class="note-grid"></div>
+
+  <!-- BLEND & GOOGLE AI BOX -->
+  <div class="blend-box">
+    <div class="blend-header">
+      <div>
+        <h3 data-i18n="blendTitle">İstersen kendi koku kombinasyonunu oluştur</h3>
+        <p class="micro" data-i18n="blendHint">Koku notalarına hakim değilsen endişelenme; algoritmamız senin için en yüksek uyumlu notaları otomatik seçti. İstersen bu seçimi doğrudan kullanabilir veya yukarıdaki kartlardan notaları ekleyip çıkarabilirsin.</p>
+      </div>
+      <span class="auto-badge" data-i18n="autoSelectedBadge">✦ Sistem Önerisi Otomatik Seçildi</span>
+    </div>
+    <div id="blend-list" class="chips"></div>
+
+    <div class="ai-controls">
+      <div class="gender-selector">
+        <span class="gender-label" data-i18n="genderTitle">Parfüm Kategorisi (Çoklu seçilebilir):</span>
+        <label><input type="checkbox" name="gender" value="unisex" checked> <span data-i18n="unisex">Unisex</span></label>
+        <label><input type="checkbox" name="gender" value="female"> <span data-i18n="female">Kadın</span></label>
+        <label><input type="checkbox" name="gender" value="male"> <span data-i18n="male">Erkek</span></label>
+      </div>
+      <div class="ai-actions">
+        <button id="find-commercial-ai" class="primary ai-btn">🔍 <span data-i18n="aiSearch">Google AI ile Ticari Parfümleri Bul</span></button>
+        <button id="save-blend" class="secondary" data-i18n="saveBlend">Koku paletimi kaydet</button>
+        <button id="save-and-retry" class="secondary retry-btn" data-i18n="saveAndRetry">Kaydet ve Yeniden Yap ↻</button>
+      </div>
+    </div>
+    <p id="blend-status" class="micro" style="margin-top:8px;font-weight:600;color:var(--green);"></p>
+  </div>
+</section>
 
 <!-- PERSONALIZED HABIT ANALYTICS -->
-<section class="panel"><div class="section-heading"><div><p class="eyebrow" data-i18n="analyticsTitle">KİŞİSEL KOKU İMZAN VE ANALİZ</p><h2 data-i18n="frequentTitle">En Sık Yöneldiğin Notalar</h2></div></div>
-<div id="frequent-notes-container" class="profile-box">
-  <p class="micro" data-i18n="frequentHint">Her keşif ve seçiminde sistem arka planda en çok hangi notalara çekildiğini analiz eder.</p>
-  <div id="frequent-list" class="chips" style="margin-top:10px;"></div>
-</div>
-<div class="tool-grid"><article class="tool-card"><span class="tool-icon">♡</span><h3 data-i18n="favorites">Favori notalar</h3><div id="favorites"></div></article><article class="tool-card"><span class="tool-icon">✧</span><h3 data-i18n="savedPalettes">Koku paletlerim</h3><div id="palettes"></div></article></div></section>
+<section id="analytics-panel" class="panel">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow" data-i18n="analyticsTitle">KİŞİSEL KOKU İMZAN VE ANALİZ</p>
+      <h2 data-i18n="frequentTitle">Fark Etmeden En Sık Yöneldiğin Notalar</h2>
+    </div>
+  </div>
+  <div id="frequent-notes-container" class="profile-box">
+    <p class="micro" data-i18n="frequentHint">Her test ve seçiminde sistem arka planda tekrar eden notalarını otomatik analiz eder ve koku imzanı çıkarır.</p>
+    <div id="frequent-list" class="chips" style="margin-top:10px;"></div>
+  </div>
+  <div class="tool-grid">
+    <article class="tool-card">
+      <span class="tool-icon">♡</span>
+      <h3 data-i18n="favorites">Favori notalar</h3>
+      <div id="favorites"></div>
+    </article>
+    <article class="tool-card">
+      <span class="tool-icon">✧</span>
+      <h3 data-i18n="savedPalettes">Koku paletlerim</h3>
+      <div id="palettes"></div>
+    </article>
+  </div>
+</section>
 
-<section id="history-panel" class="panel hidden"><div class="section-heading"><h2 data-i18n="historyTitle">Keşif geçmişi</h2><button id="clear-history" class="text-button" data-i18n="clearHistory">Geçmişi temizle</button></div><div id="history-list"></div></section>
+<section id="history-panel" class="panel hidden">
+  <div class="section-heading">
+    <h2 data-i18n="historyTitle">Keşif geçmişi</h2>
+    <button id="clear-history" class="text-button" data-i18n="clearHistory">Geçmişi temizle</button>
+  </div>
+  <div id="history-list"></div>
+</section>
 
 <section class="disclaimer">
-<h2 data-i18n="disclaimerTitle">Bilgilendirme ve Yasal Uyarı</h2>
-<p data-i18n="disclaimer">Uygulamada sunulan nota benzerlikleri ve parfüm eşleştirmeleri, yapay zekâ destekli algoritmalar tarafından oluşturulan tahmini sonuçlardır. Bilgilendirme ve keşif amacı taşır; resmî ürün bilgisi veya birebir koku eşdeğerliği garantisi vermez.</p>
-<p data-i18n="disclaimerBrand">Listelenen marka ve ürünler ilgili hak sahiplerine aittir. Uygulamamızın bahsi geçen markalarla herhangi bir resmî bağlantısı, sponsorluğu veya iş ortaklığı bulunmamaktadır.</p>
-<p class="source-credit">Açık Veri Kaynağı: <strong>Scento Open Dataset</strong> — <a href="https://github.com/Scento-com/perfume-dataset" target="_blank" rel="noopener">Perfume Database</a> (CC BY 4.0 lisansı kapsamında kaynak gösterilerek kullanılmaktadır).</p>
+  <h2 data-i18n="disclaimerTitle">Bilgilendirme ve Yasal Uyarı</h2>
+  <p data-i18n="disclaimer">Uygulamada sunulan nota benzerlikleri ve parfüm eşleştirmeleri, yapay zekâ destekli algoritmalar tarafından oluşturulan tahmini sonuçlardır. Bilgilendirme ve keşif amacı taşır; resmî ürün bilgisi veya birebir koku eşdeğerliği garantisi vermez.</p>
+  <p data-i18n="disclaimerBrand">Listelenen marka ve ürünler ilgili hak sahiplerine aittir. Uygulamamızın bahsi geçen markalarla herhangi bir resmî bağlantısı, sponsorluğu veya iş ortaklığı bulunmamaktadır.</p>
+  <p class="source-credit" data-i18n="sourceCredit">Açık Veri Kaynağı: Scento Open Dataset — Perfume Database (CC BY 4.0 lisansı kapsamında kaynak gösterilerek kullanılmaktadır).</p>
 </section>
-<footer><span>SCENT DISCOVERY ENGINE v3.0</span><span data-i18n="footer">Koku kişiseldir. Keşif de öyle.</span></footer>
+<footer>
+  <span data-i18n="engineLabel">KOKU KEŞİF MOTORU v3.5</span>
+  <span data-i18n="footer">Koku kişiseldir. Keşif de öyle.</span>
+</footer>
 </main>
+
 <script>
 (()=>{'use strict';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const STORE={lang:'sd_lang',favorites:'sd_favorites',history:'sd_history',palettes:'sd_palettes',stats:'sd_note_stats'};
-const T={tr:{title:'Koku Keşfi',eyebrow:'KOKUNU KEŞFET',heading:'Kendini yansıtan, seni tamamlayan kokuları keşfet.',intro:'Markalardan önce kokulara odaklan. Nasıl olduğunu, nasıl hissetmek istediğini ve nasıl algılanmak istediğini seç.',step1:'ADIM 01',profileTitle:'Koku niyetini belirle',selfHint:'Önce şu anki kişiliğinden, enerjinden ve tarzından izler seç.',step2:'ADIM 02',transformTitle:'Nasıl hissetmek istiyorum?',transformHint:'Kendinde keşfetmek veya deneyimlemek istediğin hisleri seç.',step3:'ADIM 03',expressTitle:'Nasıl algılanmak istiyorum?',expressHint:'Çevrene vermek istediğin izlenimi seç.',discover:'Koku önerilerimi keşfet',clear:'Temizle ↺',step4:'ADIM 04',resultsTitle:'Sana önerilen koku notaları',scoreCaution:'Sıralama, seçtiğin tercihler ile nota profillerinin kural tabanlı örtüşmesine dayanır. Kişilik testi veya bilimsel koku uyumu ölçümü değildir.',blendTitle:'Kendi koku kombinasyonunu oluştur',blendHint:'Önerilerden beğendiğin notaları seçerek kişisel bir koku paleti oluştur.',saveBlend:'Koku paletimi kaydet',aiSearch:'Google AI ile Ticari Parfümleri Bul',unisex:'Unisex',female:'Kadın',male:'Erkek',analyticsTitle:'KİŞİSEL KOKU İMZAN VE ANALİZ',frequentTitle:'En Sık Tercih Ettiğin Notalar',frequentHint:'Seçimleriniz ve oluşturduğunuz paletler doğrultusunda arka planda otomatik hesaplanan koku profiliniz:',noStats:'Henüz yeterli veri yok. Keşif yaptıkça sık kullandığın notalar burada görünecek.',personal:'KİŞİSEL ALANIN',personalTitle:'Kaydettiklerin',favorites:'Favori notalar',savedPalettes:'Koku paletlerim',history:'Geçmiş',historyTitle:'Keşif geçmişi',clearHistory:'Geçmişi temizle',disclaimerTitle:'Bilgilendirme ve Yasal Uyarı',disclaimer:'Uygulamada sunulan nota benzerlikleri ve parfüm eşleştirmeleri, yapay zekâ destekli algoritmalar tarafından oluşturulan tahmini sonuçlardır. Bilgilendirme ve keşif amacı taşır; resmî ürün bilgisi veya birebir koku eşdeğerliği garantisi vermez.',footer:'Koku kişiseldir. Keşif de öyle.',choose:'En az bir özellik veya niyet seçmelisin.',noResults:'Bu seçimlerle eşleşen nota bulunamadı. Başka bir tercih kombinasyonu dene.',self:'Şu anki benliğim',transform:'Aradığım his',express:'Vermek istediğim izlenim',match:'Tercih uyumu',favorite:'Favori',unfavorite:'Favoriden çıkar',added:'Kaydedildi',remove:'Sil',saved:'Koku paletin kaydedildi.',empty:'Henüz kayıt yok.',blendEmpty:'Koku paletine eklemek için önerilerden nota seç.',historyEmpty:'Henüz keşif geçmişi yok.'},
-en:{title:'Scent Discovery',eyebrow:'DISCOVER YOUR SCENT',heading:'Discover scents that reflect you and complement who you are.',intro:'Explore scent before brands. Choose who you are, how you want to feel and how you want to be perceived.',step1:'STEP 01',profileTitle:'Define your scent intention',selfHint:'Start with traits that describe your current personality, energy and style.',step2:'STEP 02',transformTitle:'How do I want to feel?',transformHint:'Choose feelings you would like to explore or experience.',step3:'STEP 03',expressTitle:'How do I want to be perceived?',expressHint:'Choose the impression you would like to communicate.',discover:'Discover my scent suggestions',clear:'Reset ↺',step4:'STEP 04',resultsTitle:'Scent notes recommended for you',scoreCaution:'Rankings are based on rule-based overlap between your preferences and note profiles. This is not a personality test or a scientific measure of scent compatibility.',blendTitle:'Create your own scent combination',blendHint:'Select notes you like from the recommendations to build a personal scent palette.',saveBlend:'Save my scent palette',aiSearch:'Find Commercial Perfumes with Google AI',unisex:'Unisex',female:'Women',male:'Men',analyticsTitle:'PERSONAL SCENT SIGNATURE',frequentTitle:'Your Most Frequently Chosen Notes',frequentHint:'Your automatically calculated olfactory inclination based on your interactions:',noStats:'Not enough data yet. As you make discoveries, your frequent notes will appear here.',personal:'YOUR SPACE',personalTitle:'Your saved items',favorites:'Favorite notes',savedPalettes:'My scent palettes',history:'History',historyTitle:'Discovery history',clearHistory:'Clear history',disclaimerTitle:'Disclaimer & Legal Notice',disclaimer:'Scent notes and material descriptions are provided for exploration. Relationships between personality, mood and scent are hypotheses to be tested in the algorithm; they are not psychological or scientific assessments.',footer:'Scent is personal. Discovery is too.',choose:'Choose at least one trait or intention.',noResults:'No notes matched these selections. Try another combination.',self:'Current self',transform:'Desired feeling',express:'Desired impression',match:'Preference match',favorite:'Favorite',unfavorite:'Remove favorite',added:'Saved',remove:'Remove',saved:'Your scent palette has been saved.',empty:'Nothing saved yet.',blendEmpty:'Select notes from recommendations to build your palette.',historyEmpty:'No discovery history yet.'}};
-let lang=localStorage.getItem(STORE.lang)||((navigator.language||'tr').toLowerCase().startsWith('tr')?'tr':'en'),traitsData,matching,library=[],selectedSelf=new Set(),selectedIntent=new Set(),selectedExpress=new Set(),blend=new Set(),latest=[];
+const T={
+  tr:{
+    title:'Koku Keşfi',
+    brandTitle:'KOKU KEŞFİ',
+    signatureTab:'Tekrar Eden Notalarım',
+    eyebrow:'KOKUNU KEŞFET',
+    heading:'Kendini yansıtan, seni tamamlayan kokuları keşfet.',
+    intro:'Markalardan önce kokulara odaklan. Kim olduğunu, nasıl hissetmek ve nasıl algılanmak istediğini seç.',
+    brandPromise:'Bir parfüm kim olduğunu yansıtabilir, seni tamamlayabilir veya olmak istediğin kişiyi ifade edebilir.',
+    step1:'ADIM 01',
+    profileTitle:'Koku niyetini belirle',
+    selfHint:'Önce şu anki kişiliğinden, enerjinden ve tarzından izler seç.',
+    step2:'ADIM 02',
+    expressTitle:'Nasıl Hissetmek ve Algılanmak İstiyorum?',
+    expressHint:'Kendinde deneyimlemek istediğin hisleri ve çevrene vermek istediğin izlenimi seç (Adım 01'deki tüm özellikler de burada yer alır).',
+    discover:'Koku önerilerimi keşfet',
+    clear:'Temizle ↺',
+    step3:'ADIM 03',
+    resultsTitle:'Sana önerilen koku notaları',
+    scoreCaution:'Sıralama, seçtiğin tercihler ile nota profillerinin kural tabanlı örtüşmesine dayanır. Kişilik testi veya bilimsel koku uyumu ölçümü değildir.',
+    blendTitle:'İstersen kendi koku kombinasyonunu oluştur',
+    blendHint:'Koku notalarına hakim değilsen endişelenme; algoritmamız senin için en yüksek uyumlu notaları otomatik seçti. İstersen bu seçimi doğrudan kullanabilir veya yukarıdaki kartlardan notaları ekleyip çıkarabilirsin.',
+    autoSelectedBadge:'✦ Sistem Önerisi Otomatik Seçildi',
+    genderTitle:'Parfüm Kategorisi (Çoklu seçilebilir):',
+    saveBlend:'Koku paletimi kaydet',
+    saveAndRetry:'Kaydet ve Yeniden Yap ↻',
+    aiSearch:'Google AI ile Ticari Parfümleri Bul',
+    unisex:'Unisex',
+    female:'Kadın',
+    male:'Erkek',
+    analyticsTitle:'KİŞİSEL KOKU İMZAN VE ANALİZ',
+    frequentTitle:'Fark Etmeden En Sık Yöneldiğin Notalar',
+    frequentHint:'Her test ve seçiminde sistem arka planda tekrar eden notalarını otomatik analiz eder ve koku imzanı çıkarır:',
+    noStats:'Henüz yeterli veri yok. Keşif yaptıkça ve kaydettikçe arka planda tekrar eden notaların burada görünecek.',
+    favorites:'Favori notalar',
+    savedPalettes:'Koku paletlerim',
+    history:'Geçmiş',
+    historyTitle:'Keşif geçmişi',
+    clearHistory:'Geçmişi temizle',
+    disclaimerTitle:'Bilgilendirme ve Yasal Uyarı',
+    disclaimer:'Uygulamada sunulan nota benzerlikleri ve parfüm eşleştirmeleri, yapay zekâ destekli algoritmalar tarafından oluşturulan tahmini sonuçlardır. Bilgilendirme ve keşif amacı taşır; resmî ürün bilgisi veya birebir koku eşdeğerliği garantisi vermez.',
+    disclaimerBrand:'Listelenen marka ve ürünler ilgili hak sahiplerine aittir. Uygulamamızın bahsi geçen markalarla herhangi bir resmî bağlantısı, sponsorluğu veya iş ortaklığı bulunmamaktadır.',
+    sourceCredit:'Açık Veri Kaynağı: Scento Open Dataset — Perfume Database (CC BY 4.0 lisansı kapsamında kaynak gösterilerek kullanılmaktadır).',
+    engineLabel:'KOKU KEŞİF MOTORU v3.5',
+    footer:'Koku kişiseldir. Keşif de öyle.',
+    choose:'En az bir özellik veya niyet seçmelisin.',
+    noResults:'Bu seçimlerle eşleşen nota bulunamadı. Başka bir tercih kombinasyonu dene.',
+    self:'Şu anki benliğim',
+    express:'Hissetmek ve algılanmak istediğim',
+    favorite:'Favori',
+    remove:'Sil',
+    saved:'Koku paletin kaydedildi ve tekrar eden nota analizine işlendi.',
+    savedRetrying:'Koku paletin kaydedildi! Yeni bir keşif için seçimlerin sıfırlandı.',
+    empty:'Henüz kayıt yok.',
+    blendEmpty:'Koku paletine eklemek için önerilerden nota seç.',
+    historyEmpty:'Henüz keşif geçmişi yok.',
+    addPaletteBtn:'Kombine ekle',
+    inPaletteBtn:'Kombinde seçili',
+    impressionsCat:'İzlenim ve atmosfer',
+    repeatSuffix:'kez tekrar etti'
+  },
+  en:{
+    title:'Scent Discovery',
+    brandTitle:'SCENT DISCOVERY',
+    signatureTab:'My Recurring Notes',
+    eyebrow:'DISCOVER YOUR SCENT',
+    heading:'Discover scents that reflect you and complement who you are.',
+    intro:'Explore scent before brands. Choose who you are, how you want to feel and how you want to be perceived.',
+    brandPromise:'A fragrance can reflect who you are, complement who you are, or express who you want to be.',
+    step1:'STEP 01',
+    profileTitle:'Define your scent intention',
+    selfHint:'Start with traits that describe your current personality, energy and style.',
+    step2:'STEP 02',
+    expressTitle:'How Do I Want to Feel and Be Perceived?',
+    expressHint:'Choose the feelings you want to experience and the impression you want to give (all traits from Step 01 are also available here).',
+    discover:'Discover my scent suggestions',
+    clear:'Reset ↺',
+    step3:'STEP 03',
+    resultsTitle:'Scent notes recommended for you',
+    scoreCaution:'Rankings are based on rule-based overlap between your preferences and note profiles. This is not a personality test or a scientific measure of scent compatibility.',
+    blendTitle:'Create your own scent combination (Optional)',
+    blendHint:'Not familiar with perfume notes? No worries—our algorithm automatically pre-selected the highest-matching notes for you. Use them directly or customize from the cards above.',
+    autoSelectedBadge:'✦ System Recommendation Pre-Selected',
+    genderTitle:'Perfume Category (Multi-select):',
+    saveBlend:'Save my scent palette',
+    saveAndRetry:'Save & Start Over ↻',
+    aiSearch:'Find Commercial Perfumes with Google AI',
+    unisex:'Unisex',
+    female:'Women',
+    male:'Men',
+    analyticsTitle:'PERSONAL SCENT SIGNATURE & ANALYTICS',
+    frequentTitle:'Notes You Subconsciously Gravitate Toward',
+    frequentHint:'With every test and selection, the system tracks recurring notes in the background to reveal your scent signature:',
+    noStats:'Not enough data yet. As you discover and save palettes, your recurring notes will appear here.',
+    favorites:'Favorite notes',
+    savedPalettes:'My scent palettes',
+    history:'History',
+    historyTitle:'Discovery history',
+    clearHistory:'Clear history',
+    disclaimerTitle:'Disclaimer & Legal Notice',
+    disclaimer:'Scent note similarities and perfume matches presented in this application are estimated results generated by AI-supported algorithms for informational and discovery purposes only.',
+    disclaimerBrand:'Listed brands and products belong to their respective owners. This application has no official affiliation, sponsorship, or partnership with any mentioned brands.',
+    sourceCredit:'Open Data Source: Scento Open Dataset — Perfume Database (used with attribution under the CC BY 4.0 license).',
+    engineLabel:'SCENT DISCOVERY ENGINE v3.5',
+    footer:'Scent is personal. Discovery is too.',
+    choose:'Choose at least one trait or intention.',
+    noResults:'No notes matched these selections. Try another combination.',
+    self:'Current self',
+    express:'Desired feeling & impression',
+    favorite:'Favorite',
+    remove:'Remove',
+    saved:'Your scent palette has been saved and added to your recurring note analysis.',
+    savedRetrying:'Palette saved! Selections reset for a fresh discovery.',
+    empty:'Nothing saved yet.',
+    blendEmpty:'Select notes from recommendations to build your palette.',
+    historyEmpty:'No discovery history yet.',
+    addPaletteBtn:'Add to blend',
+    inPaletteBtn:'Selected in blend',
+    impressionsCat:'Impression & aura',
+    repeatSuffix:'times repeated'
+  }
+};
+
+let lang=localStorage.getItem(STORE.lang)||((navigator.language||'tr').toLowerCase().startsWith('tr')?'tr':'en');
+let traitsData,matching,library=[],selectedSelf=new Set(),selectedExpress=new Set(),blend=new Set(),latest=[];
+let discoveryCount=0;
+
 const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},write=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
-const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim().replace(/\s+/g,' ');
+const norm=s=>String(s||'').toLowerCase().trim().replace(/\s+/g,' ');
 const slug=s=>norm(s).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const tr=(obj)=>obj?.[lang]??obj?.en??'';const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const tr=(obj)=>obj?.[lang]??obj?.en??'';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function t(k){return T[lang][k]||k}
-function setLanguage(){document.documentElement.lang=lang;$$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(T[lang][k])el.textContent=T[lang][k]});$$('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));renderSelf();renderModes();renderFavorites();renderPalettes();renderFrequentNotes();if(latest.length)renderResults(latest);}
-function renderSelf(){const host=$('#self-groups');host.innerHTML='';traitsData.categories.forEach(cat=>{const section=document.createElement('section');section.className='trait-group';section.innerHTML=`<h3>${esc(tr(cat))}</h3><div class="chips">${cat.traits.map(x=>`<label class="chip"><input type="checkbox" data-self="${esc(x.id)}" ${selectedSelf.has(x.id)?'checked':''}><span>${esc(tr(x))}</span></label>`).join('')}</div>`;host.append(section)});$$('[data-self]').forEach(x=>x.addEventListener('change',()=>{x.checked?selectedSelf.add(x.dataset.self):selectedSelf.delete(x.dataset.self);updateCount()}));updateCount()}
-function renderModes(){[['intention-options',matching.intentions,selectedIntent],['expression-options',matching.expressions,selectedExpress]].forEach(([id,items,set])=>{$('#'+id).innerHTML=items.map(x=>`<label class="chip"><input type="checkbox" data-mode="${id}" value="${x.id}" ${set.has(x.id)?'checked':''}><span>${lang==='tr'?x.tr:x.en}</span></label>`).join('')});$$('[data-mode]').forEach(x=>x.addEventListener('change',()=>{const set=x.dataset.mode==='intention-options'?selectedIntent:selectedExpress;x.checked?set.add(x.value):set.delete(x.value);updateCount()}));}
-function updateCount(){const n=selectedSelf.size+selectedIntent.size+selectedExpress.size;$('#selected-count').textContent=n;$('#clear').disabled=n===0&&latest.length===0;}
-function scoreNote(note){let self=0,intent=0,express=0;const selfTraits=traitsData.categories.flatMap(c=>c.traits).filter(x=>selectedSelf.has(x.id));const direct=new Set(selfTraits.flatMap(x=>x.notes||[]).map(norm));if(direct.has(norm(note.name.en))||direct.has(norm(note.id)))self=1;else if((note.aliases||[]).some(a=>direct.has(norm(a))))self=1;
-const noteNames=new Set([norm(note.name.en),norm(note.id),...(note.aliases||[]).map(norm)]);const facets=new Set(note.facets||[]);
-for(const id of selectedIntent){const x=matching.intentions.find(y=>y.id===id);if(!x)continue;const exact=(x.notes||[]).some(n=>noteNames.has(norm(n))||noteNames.has(norm(slug(n))));const overlap=(x.facets||[]).filter(f=>facets.has(f)).length/Math.max(1,(x.facets||[]).length);intent=Math.max(intent,exact?1:overlap)}
-for(const id of selectedExpress){const x=matching.expressions.find(y=>y.id===id);if(!x)continue;const exact=(x.notes||[]).some(n=>noteNames.has(norm(n))||noteNames.has(norm(slug(n))));const overlap=(x.facets||[]).filter(f=>facets.has(f)).length/Math.max(1,(x.facets||[]).length);express=Math.max(express,exact?1:overlap)}
-const parts=[];if(selectedSelf.size)parts.push([self,.4]);if(selectedIntent.size)parts.push([intent,.35]);if(selectedExpress.size)parts.push([express,.25]);const totalW=parts.reduce((a,b)=>a+b[1],0)||1;const overall=parts.reduce((a,b)=>a+b[0]*b[1],0)/totalW;return {...note,selfScore:self,intentScore:intent,expressScore:express,score:Math.round(overall*100)}}
-function trackNoteStats(noteIds){const stats=read(STORE.stats,{});noteIds.forEach(id=>{stats[id]=(stats[id]||0)+1});write(STORE.stats,stats);renderFrequentNotes();}
-function renderFrequentNotes(){const stats=read(STORE.stats,{});const host=$('#frequent-list');if(!host)return;const sorted=Object.entries(stats).sort((a,b)=>b[1]-a[1]).slice(0,8);if(!sorted.length){host.innerHTML=`<span class="micro">${esc(t('noStats'))}</span>`;return;}host.innerHTML=sorted.map(([id,cnt])=>{const n=library.find(x=>x.id===id);return n?`<span class="tag" style="padding:6px 12px;font-size:12px;">${esc(xName(n))} <b>(${cnt})</b></span>`:''}).join('');}
-function discover(){if(!selectedSelf.size&&!selectedIntent.size&&!selectedExpress.size){$('#warning').textContent=t('choose');return}$('#warning').textContent='';latest=library.map(scoreNote).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||xName(a).localeCompare(xName(b))).slice(0,30);renderResults(latest);$('#results').classList.remove('hidden');const summary=[...traitsData.categories.flatMap(c=>c.traits.filter(x=>selectedSelf.has(x.id)).map(x=>tr(x))),...matching.intentions.filter(x=>selectedIntent.has(x.id)).map(x=>lang==='tr'?x.tr:x.en),...matching.expressions.filter(x=>selectedExpress.has(x.id)).map(x=>lang==='tr'?x.tr:x.en)];$('#profile-summary').innerHTML=`<div class="profile-box"><strong>${esc(summary.join(' · '))}</strong><p class="micro">${esc(t('self'))}: ${selectedSelf.size} · ${esc(t('transform'))}: ${selectedIntent.size} · ${esc(t('express'))}: ${selectedExpress.size}</p></div>`;const h=read(STORE.history,[]);h.unshift({id:Date.now(),date:new Date().toISOString(),self:[...selectedSelf],intent:[...selectedIntent],express:[...selectedExpress]});write(STORE.history,h.slice(0,20));renderHistory();updateCount();$('#results').scrollIntoView({behavior:'smooth',block:'start'});}
 function xName(x){return tr(x.name)}
-function renderResults(list){const host=$('#recommendations');host.innerHTML='';if(!list.length){host.innerHTML=`<p class="empty">${esc(t('noResults'))}</p>`;return}list.slice(0,15).forEach(n=>{const card=document.createElement('article');card.className='note-card';card.innerHTML=`<div class="note-card-head"><span class="tag">${esc(tr(n.family))}</span><b class="score">${n.score}%</b></div><h3>${esc(xName(n))}</h3><p>${esc(tr(n.description))}</p><div class="score-breakdown">${selectedSelf.size?`<span>${esc(t('self'))}: ${Math.round(n.selfScore*100)}%</span>`:''}${selectedIntent.size?`<span>${esc(t('transform'))}: ${Math.round(n.intentScore*100)}%</span>`:''}${selectedExpress.size?`<span>${esc(t('express'))}: ${Math.round(n.expressScore*100)}%</span>`:''}</div><button class="text-button" data-blend="${esc(n.id)}">${blend.has(n.id)?'✓': '+'} ${esc(t('blendTitle'))}</button><button class="favorite-btn" data-favorite="${esc(n.id)}">${read(STORE.favorites,[]).includes(n.id)?'♥':'♡'} ${esc(t('favorite'))}</button>`;host.append(card)});$$('[data-blend]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.blend;if(blend.has(id)){blend.delete(id);}else{blend.add(id);trackNoteStats([id]);}renderResults(latest);renderBlend()}));$$('[data-favorite]').forEach(b=>b.addEventListener('click',()=>{let f=read(STORE.favorites,[]);const id=b.dataset.favorite;f=f.includes(id)?f.filter(x=>x!==id):[...f,id];if(f.includes(id))trackNoteStats([id]);write(STORE.favorites,f);renderResults(latest);renderFavorites()}));renderBlend()}
-function renderBlend(){const host=$('#blend-list');if(!host)return;const items=library.filter(x=>blend.has(x.id));host.innerHTML=items.length?items.map(x=>`<span class="profile-chip">${esc(xName(x))}</span>`).join(''):`<span class="micro">${esc(t('blendEmpty'))}</span>`}
-function saveBlend(){if(!blend.size)return;const p=read(STORE.palettes,[]);p.unshift({id:Date.now(),notes:[...blend]});write(STORE.palettes,p.slice(0,20));trackNoteStats([...blend]);$('#blend-status').textContent=t('saved');renderPalettes()}
-function findCommercialAI(){if(!blend.size){$('#blend-status').textContent=t('blendEmpty');return;}const gender=document.querySelector('input[name="gender"]:checked')?.value||'unisex';const items=library.filter(x=>blend.has(x.id));const noteNamesEn=items.map(x=>x.name.en).join(' ');const queryStr=encodeURIComponent(`best commercial perfumes for ${gender} featuring notes: ${noteNamesEn}`);window.open(`https://www.google.com/search?q=${queryStr}`, '_blank');}
-function renderFavorites(){const f=read(STORE.favorites,[]);$('#favorites').innerHTML=f.length?f.map(id=>{const n=library.find(x=>x.id===id);return n?`<div class="simple-row"><b>${esc(xName(n))}</b><button class="text-button" data-unfav="${esc(id)}">${esc(t('remove'))}</button></div>`:''}).join(''):`<p class="empty">${esc(t('empty'))}</p>`;$$('[data-unfav]').forEach(b=>b.addEventListener('click',()=>{write(STORE.favorites,read(STORE.favorites,[]).filter(x=>x!==b.dataset.unfav));renderFavorites();}))}
-function renderPalettes(){const p=read(STORE.palettes,[]);$('#palettes').innerHTML=p.length?p.map(x=>`<div class="simple-row"><span>${x.notes.map(id=>{const n=library.find(z=>z.id===id);return n?esc(xName(n)):''}).filter(Boolean).join(' · ')}</span><button class="text-button" data-del-palette="${x.id}">${esc(t('remove'))}</button></div>`).join(''):`<p class="empty">${esc(t('empty'))}</p>`;$$('[data-del-palette]').forEach(b=>b.addEventListener('click',()=>{write(STORE.palettes,read(STORE.palettes,[]).filter(x=>String(x.id)!==b.dataset.delPalette));renderPalettes()}))}
-function renderHistory(){const h=read(STORE.history,[]);$('#history-list').innerHTML=h.length?h.map(x=>`<div class="simple-row"><span><b>${new Date(x.date).toLocaleString(lang==='tr'?'tr-TR':'en-US')}</b><small>${esc([...x.self,...x.intent,...x.express].join(' · '))}</small></span></div>`).join(''):`<p class="empty">${esc(t('historyEmpty'))}</p>`}
-function clearAll(){selectedSelf.clear();selectedIntent.clear();selectedExpress.clear();latest=[];$('#results').classList.add('hidden');$('#warning').textContent='';renderSelf();renderModes();updateCount()}
-async function init(){try{const [a,b,c]=await Promise.all([fetch('self-traits.json').then(r=>r.json()),fetch('matching.json').then(r=>r.json()),fetch('scent-library.json').then(r=>r.json())]);traitsData=a;matching=b;library=c.materials;renderSelf();renderModes();setLanguage();renderFavorites();renderPalettes();renderFrequentNotes();}catch(e){$('#warning').textContent='Could not load the discovery data. Check that all JSON files are in the repository root.'}
-$$('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;write(STORE.lang,lang);setLanguage();}));$('#discover').addEventListener('click',discover);$('#clear').addEventListener('click',clearAll);$('#save-blend').addEventListener('click',saveBlend);$('#find-commercial-ai').addEventListener('click',findCommercialAI);$('#history-toggle').addEventListener('click',()=>{$('#history-panel').classList.toggle('hidden');renderHistory()});$('#clear-history').addEventListener('click',()=>{write(STORE.history,[]);renderHistory()});}
+
+function setLanguage(){
+  document.documentElement.lang=lang;
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(T[lang][k])el.textContent=T[lang][k]});
+  $$('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+  renderSelf();
+  renderExpressGroups();
+  renderFavorites();
+  renderPalettes();
+  renderFrequentNotes();
+  renderHistory();
+  if(latest.length)renderResults(latest);
+}
+
+function renderSelf(){
+  const host=$('#self-groups');
+  host.innerHTML='';
+  traitsData.categories.forEach(cat=>{
+    const section=document.createElement('section');
+    section.className='trait-group';
+    section.innerHTML=`<h3>${esc(tr(cat))}</h3><div class="chips">${cat.traits.map(x=>`<label class="chip"><input type="checkbox" data-self="${esc(x.id)}" ${selectedSelf.has(x.id)?'checked':''}><span>${esc(tr(x))}</span></label>`).join('')}</div>`;
+    host.append(section);
+  });
+  $$('[data-self]').forEach(x=>x.addEventListener('change',()=>{
+    x.checked?selectedSelf.add(x.dataset.self):selectedSelf.delete(x.dataset.self);
+    updateCount();
+  }));
+  updateCount();
+}
+
+function getAllExpressItems(){
+  const items=[];
+  // Add all Step 01 traits so every item from Step 01 is present in Step 02
+  traitsData.categories.forEach(cat=>{
+    cat.traits.forEach(trItem=>{
+      items.push({
+        id:'trait:'+trItem.id,
+        categoryTr:cat.tr,
+        categoryEn:cat.en,
+        tr:trItem.tr,
+        en:trItem.en,
+        notes:trItem.notes||[],
+        facets:[]
+      });
+    });
+  });
+  // Add expressions & unique intentions
+  const seenLabels=new Set(items.map(i=>norm(i.en)));
+  [...(matching.expressions||[]),...(matching.intentions||[])].forEach(mItem=>{
+    if(!seenLabels.has(norm(mItem.en))){
+      seenLabels.add(norm(mItem.en));
+      items.push({
+        id:'expr:'+mItem.id,
+        categoryTr:T.tr.impressionsCat,
+        categoryEn:T.en.impressionsCat,
+        tr:mItem.tr,
+        en:mItem.en,
+        notes:mItem.notes||[],
+        facets:mItem.facets||[]
+      });
+    }
+  });
+  return items;
+}
+
+function renderExpressGroups(){
+  const host=$('#expression-groups');
+  host.innerHTML='';
+  const allItems=getAllExpressItems();
+  const grouped=new Map();
+  allItems.forEach(item=>{
+    const catKey=lang==='tr'?item.categoryTr:item.categoryEn;
+    if(!grouped.has(catKey))grouped.set(catKey,[]);
+    grouped.get(catKey).push(item);
+  });
+  grouped.forEach((items,catTitle)=>{
+    const section=document.createElement('section');
+    section.className='trait-group';
+    section.innerHTML=`<h3>${esc(catTitle)}</h3><div class="chips">${items.map(x=>`<label class="chip"><input type="checkbox" data-express="${esc(x.id)}" ${selectedExpress.has(x.id)?'checked':''}><span>${esc(lang==='tr'?x.tr:x.en)}</span></label>`).join('')}</div>`;
+    host.append(section);
+  });
+  $$('[data-express]').forEach(x=>x.addEventListener('change',()=>{
+    x.checked?selectedExpress.add(x.dataset.express):selectedExpress.delete(x.dataset.express);
+    updateCount();
+  }));
+  updateCount();
+}
+
+function updateCount(){
+  const n=selectedSelf.size+selectedExpress.size;
+  $('#selected-count').textContent=n;
+  $('#clear').disabled=n===0&&latest.length===0;
+}
+
+function scoreNote(note){
+  let self=0,express=0;
+  const selfTraits=traitsData.categories.flatMap(c=>c.traits).filter(x=>selectedSelf.has(x.id));
+  const directSelf=new Set(selfTraits.flatMap(x=>x.notes||[]).map(norm));
+  const noteNames=new Set([norm(note.name.en),norm(note.id),...(note.aliases||[]).map(norm)]);
+  const facets=new Set(note.facets||[]);
+
+  if([...noteNames].some(n=>directSelf.has(n))) self=1;
+  else if(selfTraits.length){
+    // Secondary facet affinity so more notes participate smoothly
+    const selfFacets=new Set(selfTraits.flatMap(x=>x.notes||[]).flatMap(nName=>{
+      const libMatch=library.find(m=>norm(m.name.en)===norm(nName)||norm(m.id)===norm(nName));
+      return libMatch?(libMatch.facets||[]):[];
+    }));
+    const overlap=[...facets].filter(f=>selfFacets.has(f)).length;
+    if(overlap>0) self=Math.min(0.65, overlap*0.22);
+  }
+
+  const allExpress=getAllExpressItems();
+  for(const id of selectedExpress){
+    const x=allExpress.find(y=>y.id===id);
+    if(!x)continue;
+    const exact=(x.notes||[]).some(n=>noteNames.has(norm(n))||noteNames.has(norm(slug(n))));
+    const overlap=(x.facets||[]).length
+      ? (x.facets||[]).filter(f=>facets.has(f)).length/Math.max(1,(x.facets||[]).length)
+      : 0;
+    let secondary=0;
+    if(!exact && !overlap && (x.notes||[]).length){
+      const refFacets=new Set((x.notes||[]).flatMap(nName=>{
+        const libMatch=library.find(m=>norm(m.name.en)===norm(nName)||norm(m.id)===norm(nName));
+        return libMatch?(libMatch.facets||[]):[];
+      }));
+      const fMatch=[...facets].filter(f=>refFacets.has(f)).length;
+      if(fMatch>0) secondary=Math.min(0.6, fMatch*0.2);
+    }
+    express=Math.max(express, exact?1:Math.max(overlap,secondary));
+  }
+
+  const parts=[];
+  if(selectedSelf.size)parts.push([self,0.5]);
+  if(selectedExpress.size)parts.push([express,0.5]);
+  const totalW=parts.reduce((a,b)=>a+b[1],0)||1;
+  const overall=parts.reduce((a,b)=>a+b[0]*b[1],0)/totalW;
+  return {...note,selfScore:self,expressScore:express,score:Math.round(overall*100)};
+}
+
+function trackNoteStats(noteIds){
+  const stats=read(STORE.stats,{});
+  noteIds.forEach(id=>{stats[id]=(stats[id]||0)+1});
+  write(STORE.stats,stats);
+  renderFrequentNotes();
+}
+
+function renderFrequentNotes(){
+  const stats=read(STORE.stats,{});
+  const host=$('#frequent-list');
+  if(!host)return;
+  const sorted=Object.entries(stats).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  if(!sorted.length){
+    host.innerHTML=`<span class="micro">${esc(t('noStats'))}</span>`;
+    return;
+  }
+  host.innerHTML=sorted.map(([id,cnt])=>{
+    const n=library.find(x=>x.id===id);
+    return n?`<span class="tag" style="padding:7px 13px;font-size:12px;">${esc(xName(n))} <b>(${cnt} ${esc(t('repeatSuffix'))})</b></span>`:'';
+  }).join('');
+}
+
+function discover(){
+  if(!selectedSelf.size&&!selectedExpress.size){
+    $('#warning').textContent=t('choose');
+    return;
+  }
+  $('#warning').textContent='';
+  $('#blend-status').textContent='';
+  discoveryCount++;
+
+  // Score and add subtle deterministic rotation among tied scores so results are rich and varied
+  const scored=library.map(scoreNote).filter(x=>x.score>0);
+  scored.sort((a,b)=>{
+    if(b.score!==a.score)return b.score-a.score;
+    const hashA=(a.id.length*7+discoveryCount*13)%17;
+    const hashB=(b.id.length*7+discoveryCount*13)%17;
+    return hashA-hashB;
+  });
+
+  latest=scored.slice(0,36);
+
+  // Automatically pre-select top 4 highest scoring notes in the blend combination
+  blend=new Set(latest.slice(0,4).map(x=>x.id));
+  // Record top recommended notes in background recurring stats
+  trackNoteStats(latest.slice(0,4).map(x=>x.id));
+
+  renderResults(latest);
+  $('#results').classList.remove('hidden');
+
+  const allExpress=getAllExpressItems();
+  const summary=[
+    ...traitsData.categories.flatMap(c=>c.traits.filter(x=>selectedSelf.has(x.id)).map(x=>tr(x))),
+    ...allExpress.filter(x=>selectedExpress.has(x.id)).map(x=>lang==='tr'?x.tr:x.en)
+  ];
+
+  $('#profile-summary').innerHTML=`<div class="profile-box"><strong>${esc(summary.join(' · '))}</strong><p class="micro">${esc(t('self'))}: ${selectedSelf.size} · ${esc(t('express'))}: ${selectedExpress.size}</p></div>`;
+
+  const h=read(STORE.history,[]);
+  h.unshift({
+    id:Date.now(),
+    date:new Date().toISOString(),
+    self:[...selectedSelf],
+    express:[...selectedExpress],
+    topNotes:latest.slice(0,4).map(x=>x.id)
+  });
+  write(STORE.history,h.slice(0,25));
+  renderHistory();
+  updateCount();
+  $('#results').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function renderResults(list){
+  const host=$('#recommendations');
+  host.innerHTML='';
+  if(!list.length){
+    host.innerHTML=`<p class="empty">${esc(t('noResults'))}</p>`;
+    return;
+  }
+  list.slice(0,18).forEach(n=>{
+    const isBlended=blend.has(n.id);
+    const card=document.createElement('article');
+    card.className='note-card'+(isBlended?' is-selected':'');
+    card.innerHTML=`
+      <div class="note-card-head">
+        <span class="tag">${esc(tr(n.family))}</span>
+        <b class="score">${n.score}%</b>
+      </div>
+      <h3>${esc(xName(n))}</h3>
+      <p>${esc(tr(n.description))}</p>
+      <div class="score-breakdown">
+        ${selectedSelf.size?`<span>${esc(t('self'))}: ${Math.round(n.selfScore*100)}%</span>`:''}
+        ${selectedExpress.size?`<span>${esc(t('express'))}: ${Math.round(n.expressScore*100)}%</span>`:''}
+      </div>
+      <button class="text-button" data-blend="${esc(n.id)}">${isBlended?'✓ '+esc(t('inPaletteBtn')):'+ '+esc(t('addPaletteBtn'))}</button>
+      <button class="favorite-btn" data-favorite="${esc(n.id)}">${read(STORE.favorites,[]).includes(n.id)?'♥':'♡'} ${esc(t('favorite'))}</button>
+    `;
+    host.append(card);
+  });
+
+  $$('[data-blend]').forEach(b=>b.addEventListener('click',()=>{
+    const id=b.dataset.blend;
+    if(blend.has(id)){blend.delete(id);}
+    else{blend.add(id);trackNoteStats([id]);}
+    renderResults(latest);
+    renderBlend();
+  }));
+
+  $$('[data-favorite]').forEach(b=>b.addEventListener('click',()=>{
+    let f=read(STORE.favorites,[]);
+    const id=b.dataset.favorite;
+    f=f.includes(id)?f.filter(x=>x!==id):[...f,id];
+    if(f.includes(id))trackNoteStats([id]);
+    write(STORE.favorites,f);
+    renderResults(latest);
+    renderFavorites();
+  }));
+
+  renderBlend();
+}
+
+function renderBlend(){
+  const host=$('#blend-list');
+  if(!host)return;
+  const items=library.filter(x=>blend.has(x.id));
+  host.innerHTML=items.length
+    ? items.map(x=>`<span class="profile-chip">${esc(xName(x))} <button type="button" class="chip-remove" data-remove-blend="${esc(x.id)}" aria-label="Remove">×</button></span>`).join('')
+    : `<span class="micro">${esc(t('blendEmpty'))}</span>`;
+  $$('[data-remove-blend]').forEach(btn=>btn.addEventListener('click',()=>{
+    blend.delete(btn.dataset.removeBlend);
+    renderResults(latest);
+    renderBlend();
+  }));
+}
+
+function saveBlend(){
+  if(!blend.size){$('#blend-status').textContent=t('blendEmpty');return false;}
+  const p=read(STORE.palettes,[]);
+  p.unshift({id:Date.now(),notes:[...blend]});
+  write(STORE.palettes,p.slice(0,25));
+  trackNoteStats([...blend]);
+  $('#blend-status').textContent=t('saved');
+  renderPalettes();
+  return true;
+}
+
+function saveAndRetry(){
+  if(blend.size){
+    const p=read(STORE.palettes,[]);
+    p.unshift({id:Date.now(),notes:[...blend]});
+    write(STORE.palettes,p.slice(0,25));
+    trackNoteStats([...blend]);
+    renderPalettes();
+  }
+  clearAll();
+  $('#blend-status').textContent='';
+  $('#top').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function findCommercialAI(){
+  if(!blend.size){$('#blend-status').textContent=t('blendEmpty');return;}
+  const checkedGenders=$$('input[name="gender"]:checked').map(el=>el.value);
+  const genders=checkedGenders.length?checkedGenders:['unisex'];
+  const items=library.filter(x=>blend.has(x.id));
+
+  // Track user search intent into stats
+  trackNoteStats(items.map(x=>x.id));
+
+  let queryStr='';
+  if(lang==='tr'){
+    const genderMapTr={unisex:'unisex',female:'kadın',male:'erkek'};
+    const genderTextTr=genders.map(g=>genderMapTr[g]||g).join(' veya ');
+    const noteNamesTr=items.map(x=>x.name.tr).join(', ');
+    queryStr=encodeURIComponent(`İçinde ${noteNamesTr} notaları bulunan en iyi ${genderTextTr} parfümleri nelerdir? Alternatif niş ve designer parfüm önerileri listele.`);
+  }else{
+    const genderMapEn={unisex:'unisex',female:'women',male:'men'};
+    const genderTextEn=genders.map(g=>genderMapEn[g]||g).join(' or ');
+    const noteNamesEn=items.map(x=>x.name.en).join(', ');
+    queryStr=encodeURIComponent(`What are the best ${genderTextEn} commercial and niche perfumes featuring ${noteNamesEn} notes?`);
+  }
+  window.open(`https://www.google.com/search?q=${queryStr}`, '_blank');
+}
+
+function renderFavorites(){
+  const f=read(STORE.favorites,[]);
+  $('#favorites').innerHTML=f.length?f.map(id=>{
+    const n=library.find(x=>x.id===id);
+    return n?`<div class="simple-row"><b>${esc(xName(n))}</b><button class="text-button" data-unfav="${esc(id)}">${esc(t('remove'))}</button></div>`:'';
+  }).join(''):`<p class="empty">${esc(t('empty'))}</p>`;
+  $$('[data-unfav]').forEach(b=>b.addEventListener('click',()=>{
+    write(STORE.favorites,read(STORE.favorites,[]).filter(x=>x!==b.dataset.unfav));
+    renderFavorites();
+  }));
+}
+
+function renderPalettes(){
+  const p=read(STORE.palettes,[]);
+  $('#palettes').innerHTML=p.length?p.map(x=>`<div class="simple-row"><span>${x.notes.map(id=>{const n=library.find(z=>z.id===id);return n?esc(xName(n)):''}).filter(Boolean).join(' · ')}</span><button class="text-button" data-del-palette="${x.id}">${esc(t('remove'))}</button></div>`).join(''):`<p class="empty">${esc(t('empty'))}</p>`;
+  $$('[data-del-palette]').forEach(b=>b.addEventListener('click',()=>{
+    write(STORE.palettes,read(STORE.palettes,[]).filter(x=>String(x.id)!==b.dataset.delPalette));
+    renderPalettes();
+  }));
+}
+
+function renderHistory(){
+  const h=read(STORE.history,[]);
+  const allExpress=getAllExpressItems();
+  const allTraits=traitsData?traitsData.categories.flatMap(c=>c.traits):[];
+  $('#history-list').innerHTML=h.length?h.map(x=>{
+    const labels=[
+      ...(x.self||[]).map(id=>{const f=allTraits.find(t=>t.id===id);return f?tr(f):id;}),
+      ...(x.express||[]).map(id=>{const f=allExpress.find(e=>e.id===id);return f?(lang==='tr'?f.tr:f.en):id;})
+    ];
+    return `<div class="simple-row"><span><b>${new Date(x.date).toLocaleString(lang==='tr'?'tr-TR':'en-US')}</b> — <small>${esc(labels.join(' · '))}</small></span></div>`;
+  }).join(''):`<p class="empty">${esc(t('historyEmpty'))}</p>`;
+}
+
+function clearAll(){
+  selectedSelf.clear();
+  selectedExpress.clear();
+  blend.clear();
+  latest=[];
+  $('#results').classList.add('hidden');
+  $('#warning').textContent='';
+  renderSelf();
+  renderExpressGroups();
+  updateCount();
+}
+
+async function init(){
+  try{
+    const [a,b,c]=await Promise.all([
+      fetch('self-traits.json').then(r=>r.json()),
+      fetch('matching.json').then(r=>r.json()),
+      fetch('scent-library.json').then(r=>r.json())
+    ]);
+    traitsData=a;
+    matching=b;
+    library=c.materials;
+    renderSelf();
+    renderExpressGroups();
+    setLanguage();
+    renderFavorites();
+    renderPalettes();
+    renderFrequentNotes();
+  }catch(e){
+    $('#warning').textContent=lang==='tr'?'Veri dosyaları yüklenemedi.':'Could not load the discovery data.';
+  }
+
+  $$('[data-lang]').forEach(b=>b.addEventListener('click',()=>{
+    lang=b.dataset.lang;
+    write(STORE.lang,lang);
+    setLanguage();
+  }));
+  $('#discover').addEventListener('click',discover);
+  $('#clear').addEventListener('click',clearAll);
+  $('#save-blend').addEventListener('click',saveBlend);
+  $('#save-and-retry').addEventListener('click',saveAndRetry);
+  $('#find-commercial-ai').addEventListener('click',findCommercialAI);
+  $('#signature-tab-btn').addEventListener('click',()=>{
+    $('#analytics-panel').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  $('#history-toggle').addEventListener('click',()=>{
+    $('#history-panel').classList.toggle('hidden');
+    renderHistory();
+  });
+  $('#clear-history').addEventListener('click',()=>{
+    write(STORE.history,[]);
+    renderHistory();
+  });
+}
 init();
 })();
 </script>

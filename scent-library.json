@@ -10,11 +10,11 @@
       "id": "aldehydes",
       "name": {
         "tr": "Aldehitler",
-        "en": "aldehydes"
+        "en": "Aldehydes"
       },
       "family": {
         "tr": "Temiz / Pudramsı",
-        "en": "Temiz / Pudramsı"
+        "en": "Clean / Powdery"
       },
       "origin": "synthetic",
       "facets": [
@@ -34,11 +34,11 @@
       "id": "almond",
       "name": {
         "tr": "Badem",
-        "en": "almond"
+        "en": "Almond"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "both",
       "facets": [
@@ -58,11 +58,11 @@
       "id": "amber",
       "name": {
         "tr": "Amber",
-        "en": "amber"
+        "en": "Amber"
       },
       "family": {
         "tr": "Reçinemsi",
-        "en": "Reçinemsi"
+        "en": "Resinous"
       },
       "origin": "accord",
       "facets": [
@@ -81,12 +81,12 @@
     {
       "id": "ambrette",
       "name": {
-        "tr": "Ambrette",
-        "en": "ambrette"
+        "tr": "Ambrette (Misk Otu)",
+        "en": "Ambrette"
       },
       "family": {
         "tr": "Misk",
-        "en": "Misk"
+        "en": "Musk"
       },
       "origin": "natural",
       "facets": [
@@ -105,12 +105,12 @@
     {
       "id": "ambroxan",
       "name": {
-        "tr": "Ambroxan",
-        "en": "ambroxan"
+        "tr": "Ambroksan",
+        "en": "Ambroxan"
       },
       "family": {
         "tr": "Amberimsi",
-        "en": "Amberimsi"
+        "en": "Ambery"
       },
       "origin": "synthetic",
       "facets": [
@@ -129,12 +129,12 @@
     {
       "id": "anise",
       "name": {
-        "tr": "Anise",
-        "en": "anise"
+        "tr": "Anason",
+        "en": "Anise"
       },
       "family": {
         "tr": "Baharat / Aromatik",
-        "en": "Baharat / Aromatik"
+        "en": "Spice / Aromatic"
       },
       "origin": "natural",
       "facets": [
@@ -154,11 +154,11 @@
       "id": "apple",
       "name": {
         "tr": "Elma",
-        "en": "apple"
+        "en": "Apple"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -178,11 +178,11 @@
       "id": "apricot",
       "name": {
         "tr": "Kayısı",
-        "en": "apricot"
+        "en": "Apricot"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -202,11 +202,11 @@
       "id": "basil",
       "name": {
         "tr": "Fesleğen",
-        "en": "basil"
+        "en": "Basil"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -225,12 +225,12 @@
     {
       "id": "benzoin",
       "name": {
-        "tr": "Benzoin",
-        "en": "benzoin"
+        "tr": "Benzoin (Aselbent)",
+        "en": "Benzoin"
       },
       "family": {
         "tr": "Reçinemsi",
-        "en": "Reçinemsi"
+        "en": "Resinous"
       },
       "origin": "natural",
       "facets": [
@@ -250,11 +250,11 @@
       "id": "bergamot",
       "name": {
         "tr": "Bergamot",
-        "en": "bergamot"
+        "en": "Bergamot"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
@@ -274,11 +274,11 @@
       "id": "black-pepper",
       "name": {
         "tr": "Karabiber",
-        "en": "black pepper"
+        "en": "Black Pepper"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -298,11 +298,11 @@
       "id": "black-tea",
       "name": {
         "tr": "Siyah Çay",
-        "en": "black tea"
+        "en": "Black Tea"
       },
       "family": {
         "tr": "Aromatik",
-        "en": "Aromatik"
+        "en": "Aromatic"
       },
       "origin": "accord",
       "facets": [
@@ -321,12 +321,12 @@
     {
       "id": "blackcurrant",
       "name": {
-        "tr": "Blackcurrant",
-        "en": "blackcurrant"
+        "tr": "Frenk Üzümü",
+        "en": "Blackcurrant"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -345,12 +345,12 @@
     {
       "id": "cacao",
       "name": {
-        "tr": "Cacao",
-        "en": "cacao"
+        "tr": "Kakao",
+        "en": "Cacao"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -369,12 +369,12 @@
     {
       "id": "calone",
       "name": {
-        "tr": "Calone",
-        "en": "calone"
+        "tr": "Kalon (Deniz Esintisi)",
+        "en": "Calone"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "synthetic",
       "facets": [
@@ -393,12 +393,12 @@
     {
       "id": "caramel",
       "name": {
-        "tr": "Caramel",
-        "en": "caramel"
+        "tr": "Karamel",
+        "en": "Caramel"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -417,12 +417,12 @@
     {
       "id": "cardamom",
       "name": {
-        "tr": "Cardamom",
-        "en": "cardamom"
+        "tr": "Kakule",
+        "en": "Cardamom"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -441,12 +441,12 @@
     {
       "id": "cashmeran",
       "name": {
-        "tr": "Cashmeran",
-        "en": "cashmeran"
+        "tr": "Kaşmeran",
+        "en": "Cashmeran"
       },
       "family": {
         "tr": "Odunsu / Misk",
-        "en": "Odunsu / Misk"
+        "en": "Woody / Musk"
       },
       "origin": "synthetic",
       "facets": [
@@ -466,11 +466,11 @@
       "id": "cedar",
       "name": {
         "tr": "Sedir Ağacı",
-        "en": "cedar"
+        "en": "Cedar"
       },
       "family": {
         "tr": "Odunsu",
-        "en": "Odunsu"
+        "en": "Woody"
       },
       "origin": "natural",
       "facets": [
@@ -489,12 +489,12 @@
     {
       "id": "chamomile",
       "name": {
-        "tr": "Chamomile",
-        "en": "chamomile"
+        "tr": "Papatya",
+        "en": "Chamomile"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -514,11 +514,11 @@
       "id": "cherry",
       "name": {
         "tr": "Kiraz",
-        "en": "cherry"
+        "en": "Cherry"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -538,11 +538,11 @@
       "id": "cinnamon",
       "name": {
         "tr": "Tarçın",
-        "en": "cinnamon"
+        "en": "Cinnamon"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -561,12 +561,12 @@
     {
       "id": "civet",
       "name": {
-        "tr": "Civet",
-        "en": "civet"
+        "tr": "Misk (Civet)",
+        "en": "Civet"
       },
       "family": {
         "tr": "Misk / Animalik",
-        "en": "Misk / Animalik"
+        "en": "Musk / Animalic"
       },
       "origin": "synthetic",
       "facets": [
@@ -585,12 +585,12 @@
     {
       "id": "coconut",
       "name": {
-        "tr": "Coconut",
-        "en": "coconut"
+        "tr": "Hindistan Cevizi",
+        "en": "Coconut"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -610,11 +610,11 @@
       "id": "coffee",
       "name": {
         "tr": "Kahve",
-        "en": "coffee"
+        "en": "Coffee"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -633,12 +633,12 @@
     {
       "id": "cognac",
       "name": {
-        "tr": "Cognac",
-        "en": "cognac"
+        "tr": "Konyak",
+        "en": "Cognac"
       },
       "family": {
         "tr": "Alkollü / Gurme",
-        "en": "Alkollü / Gurme"
+        "en": "Boozy / Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -657,12 +657,12 @@
     {
       "id": "coriander",
       "name": {
-        "tr": "Coriander",
-        "en": "coriander"
+        "tr": "Kişniş",
+        "en": "Coriander"
       },
       "family": {
         "tr": "Baharat / Aromatik",
-        "en": "Baharat / Aromatik"
+        "en": "Spice / Aromatic"
       },
       "origin": "natural",
       "facets": [
@@ -681,12 +681,12 @@
     {
       "id": "cotton-flower",
       "name": {
-        "tr": "Cotton Flower",
-        "en": "cotton flower"
+        "tr": "Pamuk Çiçeği",
+        "en": "Cotton Flower"
       },
       "family": {
         "tr": "Temiz / Pudramsı",
-        "en": "Temiz / Pudramsı"
+        "en": "Clean / Powdery"
       },
       "origin": "accord",
       "facets": [
@@ -705,12 +705,12 @@
     {
       "id": "cucumber",
       "name": {
-        "tr": "Cucumber",
-        "en": "cucumber"
+        "tr": "Salatalık",
+        "en": "Cucumber"
       },
       "family": {
         "tr": "Yeşil / Sulu",
-        "en": "Yeşil / Sulu"
+        "en": "Green / Watery"
       },
       "origin": "accord",
       "facets": [
@@ -729,12 +729,12 @@
     {
       "id": "cumin",
       "name": {
-        "tr": "Cumin",
-        "en": "cumin"
+        "tr": "Kimyon",
+        "en": "Cumin"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -753,12 +753,12 @@
     {
       "id": "cypress",
       "name": {
-        "tr": "Cypress",
-        "en": "cypress"
+        "tr": "Selvi",
+        "en": "Cypress"
       },
       "family": {
         "tr": "Odunsu / Yeşil",
-        "en": "Odunsu / Yeşil"
+        "en": "Woody / Green"
       },
       "origin": "natural",
       "facets": [
@@ -777,12 +777,12 @@
     {
       "id": "dark-woods",
       "name": {
-        "tr": "Dark Woods",
-        "en": "dark woods"
+        "tr": "Koyu Odunlar",
+        "en": "Dark Woods"
       },
       "family": {
         "tr": "Odunsu",
-        "en": "Odunsu"
+        "en": "Woody"
       },
       "origin": "accord",
       "facets": [
@@ -801,12 +801,12 @@
     {
       "id": "eucalyptus",
       "name": {
-        "tr": "Eucalyptus",
-        "en": "eucalyptus"
+        "tr": "Okaliptüs",
+        "en": "Eucalyptus"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -825,12 +825,12 @@
     {
       "id": "fig",
       "name": {
-        "tr": "Fig",
-        "en": "fig"
+        "tr": "İncir",
+        "en": "Fig"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -849,12 +849,12 @@
     {
       "id": "fig-leaf",
       "name": {
-        "tr": "Fig Leaf",
-        "en": "fig leaf"
+        "tr": "İncir Yaprağı",
+        "en": "Fig Leaf"
       },
       "family": {
         "tr": "Yeşil",
-        "en": "Yeşil"
+        "en": "Green"
       },
       "origin": "accord",
       "facets": [
@@ -873,12 +873,12 @@
     {
       "id": "gardenia",
       "name": {
-        "tr": "Gardenia",
-        "en": "gardenia"
+        "tr": "Gardenya",
+        "en": "Gardenia"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -897,12 +897,12 @@
     {
       "id": "ginger",
       "name": {
-        "tr": "Ginger",
-        "en": "ginger"
+        "tr": "Zencefil",
+        "en": "Ginger"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -921,12 +921,12 @@
     {
       "id": "grapefruit",
       "name": {
-        "tr": "Grapefruit",
-        "en": "grapefruit"
+        "tr": "Greyfurt",
+        "en": "Grapefruit"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
@@ -945,12 +945,12 @@
     {
       "id": "green-tea",
       "name": {
-        "tr": "Green Tea",
-        "en": "green tea"
+        "tr": "Yeşil Çay",
+        "en": "Green Tea"
       },
       "family": {
         "tr": "Aromatik",
-        "en": "Aromatik"
+        "en": "Aromatic"
       },
       "origin": "accord",
       "facets": [
@@ -969,12 +969,12 @@
     {
       "id": "hazelnut",
       "name": {
-        "tr": "Hazelnut",
-        "en": "hazelnut"
+        "tr": "Fındık",
+        "en": "Hazelnut"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "natural",
       "facets": [
@@ -993,12 +993,12 @@
     {
       "id": "hedione",
       "name": {
-        "tr": "Hedione",
-        "en": "hedione"
+        "tr": "Hedione (Yasemin Esintisi)",
+        "en": "Hedione"
       },
       "family": {
         "tr": "Çiçeksi / Havadar",
-        "en": "Çiçeksi / Havadar"
+        "en": "Floral / Airy"
       },
       "origin": "synthetic",
       "facets": [
@@ -1017,12 +1017,12 @@
     {
       "id": "heliotrope",
       "name": {
-        "tr": "Heliotrope",
-        "en": "heliotrope"
+        "tr": "Kedi Otu Çiçeği (Heliotrop)",
+        "en": "Heliotrope"
       },
       "family": {
         "tr": "Çiçeksi / Pudramsı",
-        "en": "Çiçeksi / Pudramsı"
+        "en": "Floral / Powdery"
       },
       "origin": "natural",
       "facets": [
@@ -1041,12 +1041,12 @@
     {
       "id": "honey",
       "name": {
-        "tr": "Honey",
-        "en": "honey"
+        "tr": "Bal",
+        "en": "Honey"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -1065,12 +1065,12 @@
     {
       "id": "incense",
       "name": {
-        "tr": "Incense",
-        "en": "incense"
+        "tr": "Tütsü",
+        "en": "Incense"
       },
       "family": {
         "tr": "Tütsü / Reçine",
-        "en": "Tütsü / Reçine"
+        "en": "Incense / Resin"
       },
       "origin": "accord",
       "facets": [
@@ -1089,12 +1089,12 @@
     {
       "id": "iris",
       "name": {
-        "tr": "Iris",
-        "en": "iris"
+        "tr": "İris (Süsen)",
+        "en": "Iris"
       },
       "family": {
         "tr": "Çiçeksi / Pudramsı",
-        "en": "Çiçeksi / Pudramsı"
+        "en": "Floral / Powdery"
       },
       "origin": "natural",
       "facets": [
@@ -1114,11 +1114,11 @@
       "id": "iso-e-super",
       "name": {
         "tr": "Iso E Super",
-        "en": "iso e super"
+        "en": "Iso E Super"
       },
       "family": {
         "tr": "Odunsu",
-        "en": "Odunsu"
+        "en": "Woody"
       },
       "origin": "synthetic",
       "facets": [
@@ -1138,11 +1138,11 @@
       "id": "jasmine",
       "name": {
         "tr": "Yasemin",
-        "en": "jasmine"
+        "en": "Jasmine"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -1161,12 +1161,12 @@
     {
       "id": "juniper",
       "name": {
-        "tr": "Juniper",
-        "en": "juniper"
+        "tr": "Ardıç",
+        "en": "Juniper"
       },
       "family": {
         "tr": "Aromatik",
-        "en": "Aromatik"
+        "en": "Aromatic"
       },
       "origin": "natural",
       "facets": [
@@ -1185,12 +1185,12 @@
     {
       "id": "labdanum",
       "name": {
-        "tr": "Labdanum",
-        "en": "labdanum"
+        "tr": "Laden Reçinesi",
+        "en": "Labdanum"
       },
       "family": {
         "tr": "Reçinemsi",
-        "en": "Reçinemsi"
+        "en": "Resinous"
       },
       "origin": "natural",
       "facets": [
@@ -1210,11 +1210,11 @@
       "id": "lavender",
       "name": {
         "tr": "Lavanta",
-        "en": "lavender"
+        "en": "Lavender"
       },
       "family": {
         "tr": "Aromatik",
-        "en": "Aromatik"
+        "en": "Aromatic"
       },
       "origin": "natural",
       "facets": [
@@ -1234,11 +1234,11 @@
       "id": "leather",
       "name": {
         "tr": "Deri",
-        "en": "leather"
+        "en": "Leather"
       },
       "family": {
         "tr": "Deri / Dumansı",
-        "en": "Deri / Dumansı"
+        "en": "Leather / Smoky"
       },
       "origin": "accord",
       "facets": [
@@ -1258,11 +1258,11 @@
       "id": "lemon",
       "name": {
         "tr": "Limon",
-        "en": "lemon"
+        "en": "Lemon"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
@@ -1281,12 +1281,12 @@
     {
       "id": "lime",
       "name": {
-        "tr": "Lime",
-        "en": "lime"
+        "tr": "Misket Limonu",
+        "en": "Lime"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
@@ -1305,12 +1305,12 @@
     {
       "id": "linen",
       "name": {
-        "tr": "Linen",
-        "en": "linen"
+        "tr": "Keten",
+        "en": "Linen"
       },
       "family": {
         "tr": "Temiz / Pudramsı",
-        "en": "Temiz / Pudramsı"
+        "en": "Clean / Powdery"
       },
       "origin": "accord",
       "facets": [
@@ -1329,12 +1329,12 @@
     {
       "id": "magnolia",
       "name": {
-        "tr": "Magnolia",
-        "en": "magnolia"
+        "tr": "Manolya",
+        "en": "Magnolia"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -1353,12 +1353,12 @@
     {
       "id": "mandarin",
       "name": {
-        "tr": "Mandarin",
-        "en": "mandarin"
+        "tr": "Mandalina",
+        "en": "Mandarin"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
@@ -1377,12 +1377,12 @@
     {
       "id": "marine",
       "name": {
-        "tr": "Marine Notes",
-        "en": "marine"
+        "tr": "Deniz Notaları",
+        "en": "Marine"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -1401,12 +1401,12 @@
     {
       "id": "marshmallow",
       "name": {
-        "tr": "Marshmallow",
-        "en": "marshmallow"
+        "tr": "Marşmelov",
+        "en": "Marshmallow"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -1425,12 +1425,12 @@
     {
       "id": "metallic-accord",
       "name": {
-        "tr": "Metallic Accord",
-        "en": "metallic accord"
+        "tr": "Metalik Akor",
+        "en": "Metallic Accord"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -1449,12 +1449,12 @@
     {
       "id": "milk",
       "name": {
-        "tr": "Milk",
-        "en": "milk"
+        "tr": "Süt",
+        "en": "Milk"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -1473,12 +1473,12 @@
     {
       "id": "mineral-accord",
       "name": {
-        "tr": "Mineral Accord",
-        "en": "mineral accord"
+        "tr": "Mineral Akor",
+        "en": "Mineral Accord"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -1498,11 +1498,11 @@
       "id": "mint",
       "name": {
         "tr": "Nane",
-        "en": "mint"
+        "en": "Mint"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -1521,12 +1521,12 @@
     {
       "id": "moss",
       "name": {
-        "tr": "Moss",
-        "en": "moss"
+        "tr": "Yosun",
+        "en": "Moss"
       },
       "family": {
         "tr": "Topraksı / Yeşil",
-        "en": "Topraksı / Yeşil"
+        "en": "Earthy / Green"
       },
       "origin": "accord",
       "facets": [
@@ -1545,12 +1545,12 @@
     {
       "id": "musk",
       "name": {
-        "tr": "Musk",
-        "en": "musk"
+        "tr": "Misk",
+        "en": "Musk"
       },
       "family": {
         "tr": "Misk",
-        "en": "Misk"
+        "en": "Musk"
       },
       "origin": "accord",
       "facets": [
@@ -1569,12 +1569,12 @@
     {
       "id": "myrrh",
       "name": {
-        "tr": "Myrrh",
-        "en": "myrrh"
+        "tr": "Mür Reçinesi",
+        "en": "Myrrh"
       },
       "family": {
         "tr": "Reçine / Tütsü",
-        "en": "Reçine / Tütsü"
+        "en": "Resin / Incense"
       },
       "origin": "natural",
       "facets": [
@@ -1593,12 +1593,12 @@
     {
       "id": "neroli",
       "name": {
-        "tr": "Neroli",
-        "en": "neroli"
+        "tr": "Neroli (Portakal Çiçeği Özü)",
+        "en": "Neroli"
       },
       "family": {
         "tr": "Narenciye / Çiçeksi",
-        "en": "Narenciye / Çiçeksi"
+        "en": "Citrus / Floral"
       },
       "origin": "natural",
       "facets": [
@@ -1617,12 +1617,12 @@
     {
       "id": "oakmoss",
       "name": {
-        "tr": "Oakmoss",
-        "en": "oakmoss"
+        "tr": "Meşe Yosunu",
+        "en": "Oakmoss"
       },
       "family": {
         "tr": "Topraksı / Yeşil",
-        "en": "Topraksı / Yeşil"
+        "en": "Earthy / Green"
       },
       "origin": "natural",
       "facets": [
@@ -1641,12 +1641,12 @@
     {
       "id": "orange",
       "name": {
-        "tr": "Orange",
-        "en": "orange"
+        "tr": "Portakal",
+        "en": "Orange"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
@@ -1665,12 +1665,12 @@
     {
       "id": "orange-blossom",
       "name": {
-        "tr": "Orange Blossom",
-        "en": "orange blossom"
+        "tr": "Portakal Çiçeği",
+        "en": "Orange Blossom"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -1689,12 +1689,12 @@
     {
       "id": "oud",
       "name": {
-        "tr": "Oud",
-        "en": "oud"
+        "tr": "Ud (Öd Ağacı)",
+        "en": "Oud"
       },
       "family": {
         "tr": "Odunsu / Reçine",
-        "en": "Odunsu / Reçine"
+        "en": "Woody / Resin"
       },
       "origin": "natural",
       "facets": [
@@ -1713,12 +1713,12 @@
     {
       "id": "ozonic-accord",
       "name": {
-        "tr": "Ozonic Accord",
-        "en": "ozonic accord"
+        "tr": "Ozonik Akor",
+        "en": "Ozonic Accord"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -1737,12 +1737,12 @@
     {
       "id": "patchouli",
       "name": {
-        "tr": "Patchouli",
-        "en": "patchouli"
+        "tr": "Paçuli (Tefarik)",
+        "en": "Patchouli"
       },
       "family": {
         "tr": "Odunsu / Topraksı",
-        "en": "Odunsu / Topraksı"
+        "en": "Woody / Earthy"
       },
       "origin": "natural",
       "facets": [
@@ -1761,12 +1761,12 @@
     {
       "id": "peach",
       "name": {
-        "tr": "Peach",
-        "en": "peach"
+        "tr": "Şeftali",
+        "en": "Peach"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -1785,12 +1785,12 @@
     {
       "id": "pear",
       "name": {
-        "tr": "Pear",
-        "en": "pear"
+        "tr": "Armut",
+        "en": "Pear"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -1809,12 +1809,12 @@
     {
       "id": "peony",
       "name": {
-        "tr": "Peony",
-        "en": "peony"
+        "tr": "Şakayık",
+        "en": "Peony"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "accord",
       "facets": [
@@ -1833,12 +1833,12 @@
     {
       "id": "pepper",
       "name": {
-        "tr": "Pepper",
-        "en": "pepper"
+        "tr": "Biber",
+        "en": "Pepper"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -1859,12 +1859,12 @@
     {
       "id": "petitgrain",
       "name": {
-        "tr": "Petitgrain",
-        "en": "petitgrain"
+        "tr": "Turunç Yaprağı",
+        "en": "Petitgrain"
       },
       "family": {
         "tr": "Narenciye / Yeşil",
-        "en": "Narenciye / Yeşil"
+        "en": "Citrus / Green"
       },
       "origin": "natural",
       "facets": [
@@ -1883,12 +1883,12 @@
     {
       "id": "pineapple",
       "name": {
-        "tr": "Pineapple",
-        "en": "pineapple"
+        "tr": "Ananas",
+        "en": "Pineapple"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -1907,12 +1907,12 @@
     {
       "id": "pink-pepper",
       "name": {
-        "tr": "Pink Pepper",
-        "en": "pink pepper"
+        "tr": "Pembe Biber",
+        "en": "Pink Pepper"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -1931,12 +1931,12 @@
     {
       "id": "pistachio",
       "name": {
-        "tr": "Pistachio",
-        "en": "pistachio"
+        "tr": "Antep Fıstığı",
+        "en": "Pistachio"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -1955,12 +1955,12 @@
     {
       "id": "plum",
       "name": {
-        "tr": "Plum",
-        "en": "plum"
+        "tr": "Erik",
+        "en": "Plum"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -1979,12 +1979,12 @@
     {
       "id": "praline",
       "name": {
-        "tr": "Praline",
-        "en": "praline"
+        "tr": "Pralin",
+        "en": "Praline"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -2003,12 +2003,12 @@
     {
       "id": "raspberry",
       "name": {
-        "tr": "Raspberry",
-        "en": "raspberry"
+        "tr": "Ahududu",
+        "en": "Raspberry"
       },
       "family": {
         "tr": "Meyvemsi",
-        "en": "Meyvemsi"
+        "en": "Fruity"
       },
       "origin": "accord",
       "facets": [
@@ -2028,11 +2028,11 @@
       "id": "rose",
       "name": {
         "tr": "Gül",
-        "en": "rose"
+        "en": "Rose"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -2051,12 +2051,12 @@
     {
       "id": "rosemary",
       "name": {
-        "tr": "Rosemary",
-        "en": "rosemary"
+        "tr": "Biberiye",
+        "en": "Rosemary"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -2075,12 +2075,12 @@
     {
       "id": "rum",
       "name": {
-        "tr": "Rum",
-        "en": "rum"
+        "tr": "Rom",
+        "en": "Rum"
       },
       "family": {
         "tr": "Alkollü / Gurme",
-        "en": "Alkollü / Gurme"
+        "en": "Boozy / Gourmand"
       },
       "origin": "accord",
       "facets": [
@@ -2099,12 +2099,12 @@
     {
       "id": "saffron",
       "name": {
-        "tr": "Saffron",
-        "en": "saffron"
+        "tr": "Safran",
+        "en": "Saffron"
       },
       "family": {
         "tr": "Baharat",
-        "en": "Baharat"
+        "en": "Spice"
       },
       "origin": "natural",
       "facets": [
@@ -2123,12 +2123,12 @@
     {
       "id": "sage",
       "name": {
-        "tr": "Sage",
-        "en": "sage"
+        "tr": "Adaçayı",
+        "en": "Sage"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -2147,12 +2147,12 @@
     {
       "id": "sandalwood",
       "name": {
-        "tr": "Sandalwood",
-        "en": "sandalwood"
+        "tr": "Sandal Ağacı",
+        "en": "Sandalwood"
       },
       "family": {
         "tr": "Odunsu",
-        "en": "Odunsu"
+        "en": "Woody"
       },
       "origin": "natural",
       "facets": [
@@ -2171,12 +2171,12 @@
     {
       "id": "sea-salt",
       "name": {
-        "tr": "Sea Salt",
-        "en": "sea salt"
+        "tr": "Deniz Tuzu",
+        "en": "Sea Salt"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -2195,12 +2195,12 @@
     {
       "id": "seaweed",
       "name": {
-        "tr": "Seaweed",
-        "en": "seaweed"
+        "tr": "Deniz Yosunu",
+        "en": "Seaweed"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -2219,12 +2219,12 @@
     {
       "id": "smoke",
       "name": {
-        "tr": "Smoke",
-        "en": "smoke"
+        "tr": "Duman",
+        "en": "Smoke"
       },
       "family": {
         "tr": "Dumansı",
-        "en": "Dumansı"
+        "en": "Smoky"
       },
       "origin": "accord",
       "facets": [
@@ -2243,12 +2243,12 @@
     {
       "id": "tea",
       "name": {
-        "tr": "Tea",
-        "en": "tea"
+        "tr": "Çay",
+        "en": "Tea"
       },
       "family": {
         "tr": "Aromatik",
-        "en": "Aromatik"
+        "en": "Aromatic"
       },
       "origin": "accord",
       "facets": [
@@ -2267,12 +2267,12 @@
     {
       "id": "thyme",
       "name": {
-        "tr": "Thyme",
-        "en": "thyme"
+        "tr": "Kekik",
+        "en": "Thyme"
       },
       "family": {
         "tr": "Bitkisel",
-        "en": "Bitkisel"
+        "en": "Herbal"
       },
       "origin": "natural",
       "facets": [
@@ -2291,12 +2291,12 @@
     {
       "id": "tobacco",
       "name": {
-        "tr": "Tobacco",
-        "en": "tobacco"
+        "tr": "Tütün",
+        "en": "Tobacco"
       },
       "family": {
         "tr": "Odunsu / Dumansı",
-        "en": "Odunsu / Dumansı"
+        "en": "Woody / Smoky"
       },
       "origin": "natural",
       "facets": [
@@ -2315,12 +2315,12 @@
     {
       "id": "tonka-bean",
       "name": {
-        "tr": "Tonka Bean",
-        "en": "tonka bean"
+        "tr": "Tonka Fasulyesi",
+        "en": "Tonka Bean"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "natural",
       "facets": [
@@ -2339,12 +2339,12 @@
     {
       "id": "tuberose",
       "name": {
-        "tr": "Tuberose",
-        "en": "tuberose"
+        "tr": "Sümbülteber",
+        "en": "Tuberose"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -2364,11 +2364,11 @@
       "id": "vanilla",
       "name": {
         "tr": "Vanilya",
-        "en": "vanilla"
+        "en": "Vanilla"
       },
       "family": {
         "tr": "Gurme",
-        "en": "Gurme"
+        "en": "Gourmand"
       },
       "origin": "natural",
       "facets": [
@@ -2387,12 +2387,12 @@
     {
       "id": "vetiver",
       "name": {
-        "tr": "Vetiver",
-        "en": "vetiver"
+        "tr": "Vetiver (Kabe Samanı)",
+        "en": "Vetiver"
       },
       "family": {
         "tr": "Odunsu / Topraksı",
-        "en": "Odunsu / Topraksı"
+        "en": "Woody / Earthy"
       },
       "origin": "natural",
       "facets": [
@@ -2411,12 +2411,12 @@
     {
       "id": "violet",
       "name": {
-        "tr": "Violet",
-        "en": "violet"
+        "tr": "Menekşe",
+        "en": "Violet"
       },
       "family": {
         "tr": "Çiçeksi / Pudramsı",
-        "en": "Çiçeksi / Pudramsı"
+        "en": "Floral / Powdery"
       },
       "origin": "natural",
       "facets": [
@@ -2435,12 +2435,12 @@
     {
       "id": "watery",
       "name": {
-        "tr": "Watery Notes",
-        "en": "watery"
+        "tr": "Sulu Notalar",
+        "en": "Watery"
       },
       "family": {
         "tr": "Deniz / Mineral",
-        "en": "Deniz / Mineral"
+        "en": "Marine / Mineral"
       },
       "origin": "accord",
       "facets": [
@@ -2459,12 +2459,12 @@
     {
       "id": "white-musk",
       "name": {
-        "tr": "White Musk",
-        "en": "white musk"
+        "tr": "Beyaz Misk",
+        "en": "White Musk"
       },
       "family": {
         "tr": "Misk",
-        "en": "Misk"
+        "en": "Musk"
       },
       "origin": "accord",
       "facets": [
@@ -2486,11 +2486,11 @@
       "id": "ylang-ylang",
       "name": {
         "tr": "Ylang-Ylang",
-        "en": "ylang-ylang"
+        "en": "Ylang-Ylang"
       },
       "family": {
         "tr": "Çiçeksi",
-        "en": "Çiçeksi"
+        "en": "Floral"
       },
       "origin": "natural",
       "facets": [
@@ -2510,11 +2510,11 @@
       "id": "yuzu",
       "name": {
         "tr": "Yuzu",
-        "en": "yuzu"
+        "en": "Yuzu"
       },
       "family": {
         "tr": "Narenciye",
-        "en": "Narenciye"
+        "en": "Citrus"
       },
       "origin": "natural",
       "facets": [
